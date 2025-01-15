@@ -1,14 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel Paraíso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
-    <h1> prueba</h1>
+<body class="min-h-screen flex flex-col">
+   
+    <header class="bg-blue-950 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+           <img class="imagen1" src="/Proyecto-Javascript/img/puedes generar un logo de un hotel, lujoso pero sencillo, el hotel se llama el rincon de camila.jpg" width="130px">
+            <nav>
+                <ul id="lista" class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Inicio</a></li>
+                    <li><a href="#" class="hover:underline">página 2</a></li>
+                    <li><a href="#" class="hover:underline">Página 3</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   
+    <main class="flex-grow">
+       
+        <section class="relative h-96 bg-cover bg-center" style="background-image: url('/Proyecto-Javascript/img/hotelPortada.jpeg');">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center text-white">
+                    <h2 class="text-4xl font-bold mb-4">Bienvenido al Rincón de Camila</h2>
+                    <p class="text-xl mb-8">Un rincón de tu Hogar</p>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">
+                        Reservar ahora
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Nuestras Comodidades</h2>
+                <div id="contenedor" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <article class="bg-white p-6 rounded-lg shadow-md">
+                        
+                        <img src="/Proyecto-Javascript/img/Habitaciones.jpeg" width="100%">
+                        
+                        <h3 class="text-xl text-center font-semibold mb-4">Habitaciones de Lujo</h3>
+                        <p>Disfruta de nuestras espaciosas y elegantes habitaciones con vistas impresionantes.</p>
+                        <button id="boton4" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">VER</button>
+                    </article>
+                    <article class="bg-white text-center p-6 rounded-lg shadow-md">
+                        <img src="/Proyecto-Javascript/img/hotel1.jpeg" width="100%">
+                        <h3 class="text-xl font-semibold mb-4">Restaurante Gourmet</h3>
+                        <p>Saborea deliciosos platos preparados por nuestros chefs de clase mundial.</p>
+                        <button id="boton3" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">VER</button>
+                    </article>
+                    <article class="bg-white text-center p-6 rounded-lg shadow-md">
+                        <img src="/Proyecto-Javascript/img/hotel2.jpeg" width="100%">
+                        <h3 class="text-xl font-semibold mb-4">Spa y Bienestar</h3>
+                        <p>Relájate y rejuvenece en nuestro lujoso spa con tratamientos exclusivos.</p>
+                        <button id="boton3" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">VER</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contenedor-sec" class="py-16 bg-gray-100">
+            <div class="contenido">
+                <div class="Tarjetas">
+                    <ul class="listaTar">
+                        <li class="itemtarjeta">
+                            <a href="#" class="tarjetared"><img src="/Proyecto-Javascript/img/habitacionLujo.jpeg" class="tarimg">
+                                <h2 class="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit nisi fugit aut animi!</h2>
+                                <button class="boton-tar">IR</button>
+                            </a>
+
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <h3 class="text-xl font-bold mb-2">Hotel Paraíso</h3>
+                <p>Tu escape perfecto</p>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="interactive.js"></script>
 </html>
