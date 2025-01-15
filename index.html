@@ -19,8 +19,8 @@
             <nav>
                 <ul id="lista" class="flex space-x-4">
                     <li><a href="#" class="hover:underline">Inicio</a></li>
-                    <li><a href="#" class="hover:underline">página 2</a></li>
-                    <li><a href="#" class="hover:underline">Página 3</a></li>
+                    <li><a href="#" class="hover:underline">Reservas</a></li>
+                    <li><a href="#" class="hover:underline">Contacto</a></li>
 
                 </ul>
             </nav>
@@ -89,25 +89,121 @@
 
 
             </main>
-           
-            
+
+
         </section>
     </main>
 
 
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <h3 class="text-xl font-bold mb-2">Hotel Paraíso</h3>
-                <p>Tu escape perfecto</p>
-
-                <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-                     &q=Space+Needle,Seattle+WA">
-                </iframe>
+    <footer class="py-12 lg:py-16 border-t border-neutral-100">
+        <div class="w-[96%] max-w-7xl mx-auto">
+          <div
+            class="border-b border-neutral-100 pb-8 lg:pb-16 flex justify-between flex-col lg:flex-row items-center lg:items-start"
+          >
+            <div
+              class="space-y-8 pb-8 border-b border-neutral-100 lg:pb-0 lg:border-none w-full flex flex-col lg:block items-center"
+            >
+              <img src="./assets/img/logo.svg" alt="cadetUI" class="w-fit" />
+              <ul
+                class="flex gap-x-8 text-xs text-gray-500 flex-col lg:flex-row gap-y-6 text-center lg:text-start"
+              >
+                <li>
+                  <a href="#" class="hover:text-cyan-600">Products & Service</a>
+                </li>
+                <li><a href="#" class="hover:text-cyan-600">Resources</a></li>
+                <li><a href="#" class="hover:text-cyan-600">Contact</a></li>
+                <li><a href="#" class="hover:text-cyan-600">About</a></li>
+              </ul>
+              
+              <div class="flex items-center gap-x-4 text-gray-700">
+               
+                <a href="#" class="hover:text-cyan-600 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 30 30"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"
+                    ></path>
+                  </svg>
+                </a>
+                
+                <a href="#" class="hover:text-cyan-600 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 32 32"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z"
+                    ></path>
+                  </svg>
+                </a>
+                <!-- X icon -->
+                <a href="#" class="hover:text-cyan-600 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z"
+                    ></path>
+                  </svg>
+                </a>
+                
+                </a>
+              </div>
+              
             </div>
+            <div class="pt-8 lg:pt-0 max-w-[624px] w-full">
+              <h4
+                class="mb-2 font-medium text-lg leading-7 text-gray-900 text-center lg:text-start"
+              >
+                Info Section
+              </h4>
+              <p class="mb-6 font-medium text-gray-500 text-center lg:text-start">
+                Introduce tu información de contacto para obtener más informacón
+              </p>
+              <form class="flex gap-x-3 w-full">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="border rounded-lg p-3 text-sm focus:outline-cyan-600 flex-1"
+                />
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  class="bg-cyan-600 rounded-lg py-3 px-5 text-white text-sm cursor-pointer hover:brightness-95"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="pt-8 flex justify-between flex-col lg:flex-row gap-y-4 items-center">
+            <ul class="flex gap-x-8 text-xs text-gray-500">
+              <li><a href="#" class="hover:text-cyan-600">English</a></li>
+              <li><a href="#" class="hover:text-cyan-600">Privacy</a></li>
+              <li><a href="#" class="hover:text-cyan-600">Legal</a></li>
+            </ul>
+            <p class="text-xs text-gray-400">
+              © 2023 Hotel RINCÓN D' CAMILA. All Rights Reserved.
+            </p>
+          </div>
         </div>
-    </footer>
+      </footer>
 </body>
 <script src="interactive.js"></script>
 
