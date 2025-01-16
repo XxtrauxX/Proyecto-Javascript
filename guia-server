@@ -1,0 +1,115 @@
+{
+  "habitaciones": [
+    {
+      "id": 1,
+      "nombre": "Habitación Estándar",
+      "tipo": "Individual",
+      "camas": 1,
+      "precio": 100,
+      "disponibilidad": [
+        { "fecha": "2025-01-20", "disponible": true },
+        { "fecha": "2025-01-21", "disponible": true }
+      ],
+      "servicios": ["Internet", "Minibar", "Jacuzzi"],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+    },
+    {
+      "id": 2,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "precio": 250,
+      "disponibilidad": [
+        { "fecha": "2025-01-20", "disponible": true },
+        { "fecha": "2025-01-21", "disponible": false }
+      ],
+      "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    }
+  ],
+  
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "email": "juan@correo.com",
+      "password": "contraseña123",
+      "telefono": "+1234567890",
+      "reservas": [
+        {
+          "id_habitacion": 1,
+          "fecha_inicio": "2025-01-20",
+          "fecha_fin": "2025-01-22",
+          "estado": "confirmada"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Ana Gómez",
+      "email": "ana@correo.com",
+      "password": "contraseña456",
+      "telefono": "+0987654321",
+      "reservas": []
+    }
+  ],
+
+  "reservas": [
+    {
+      "id": 1,
+      "id_usuario": 1,
+      "id_habitacion": 1,
+      "fecha_inicio": "2025-01-20",
+      "fecha_fin": "2025-01-22",
+      "cantidad_personas": 1,
+      "total": 200,
+      "estado": "confirmada"
+    }
+  ],
+
+  "contacto": {
+    "direccion": "Calle Ficticia 123, Ciudad X",
+    "telefono": "+1234567890",
+    "whatsapp": "https://wa.me/1234567890",
+    "email": "contacto@rincondecamila.com"
+  }
+}
+
+
+El servidor json adb.jsonEstos son todos
+
+GET /habitaciones : Obtiene
+GET /habitaciones/ :id : Obtiene los detalles
+GET /reservas : Obtenga todas
+POST /reservas : Crea un
+ELIMINAR /reservas/ :id : El
+OBTENER /usuarios :
+POST/usuarios :
+OBTENER /contacto : Obt
+
+
+
+<section class="max-w-7xl mx-auto p-4 md:p-6">
+            <div class="relative overflow-hidden rounded-2xl border-x-2 border-y-2  border-gray-300 bg-white">
+              <div class="grid md:grid-cols-2 gap-6">
+                
+                <div class="relative h-64 md:h-full">
+                  <img 
+                    src="/Proyecto-Javascript/img/Habitaciones.jpeg"
+                    class="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+          
+               
+                <div class="p-6 md:p-8 flex flex-col justify-center">
+                  <h2 class="text-3xl font-bold mb-4">habitación Standar</h2>
+                  <p class="text-gray-600 mb-6">
+                    Gane el doble de puntos Hilton Honors por cada noche de su estadía.
+                  </p>
+                  
+            
+                    <button class="inline-flex justify-center items-center px-6 py-3 rounded-lg bg-blue-900 text-white font-medium hover:bg-blue-800 transition-colors w-full sm:w-auto text-center"> VER DETALLES</button>
+                </div>
+              </div>
+            </div>
+          </section>

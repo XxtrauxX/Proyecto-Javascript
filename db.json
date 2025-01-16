@@ -1,0 +1,76 @@
+{
+    "habitaciones": [
+      {
+        "id": 1,
+        "nombre": "Habitación Estándar",
+        "tipo": "Individual",
+        "camas": 1,
+        "precio": 100,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi"],
+        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      },
+      {
+        "id": 2,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 250,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": false }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      }
+    ],
+    
+    "usuarios": [
+      {
+        "id": 1,
+        "nombre": "Juan Pérez",
+        "email": "juan@correo.com",
+        "password": "contraseña123",
+        "telefono": "+1234567890",
+        "reservas": [
+          {
+            "id_habitacion": 1,
+            "fecha_inicio": "2025-01-20",
+            "fecha_fin": "2025-01-22",
+            "estado": "confirmada"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nombre": "Ana Gómez",
+        "email": "ana@correo.com",
+        "password": "contraseña456",
+        "telefono": "+0987654321",
+        "reservas": []
+      }
+    ],
+  
+    "reservas": [
+      {
+        "id": 1,
+        "id_usuario": 1,
+        "id_habitacion": 1,
+        "fecha_inicio": "2025-01-20",
+        "fecha_fin": "2025-01-22",
+        "cantidad_personas": 1,
+        "total": 200,
+        "estado": "confirmada"
+      }
+    ],
+  
+    "contacto": {
+      "direccion": "Calle Ficticia 123, Ciudad X",
+      "telefono": "+1234567890",
+      "whatsapp": "https://wa.me/1234567890",
+      "email": "contacto@rincondecamila.com"
+    }
+  }

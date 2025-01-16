@@ -3,16 +3,18 @@ const contendor = document.querySelector('#contenidojs')
 const boton = document.querySelector('#boton67')
 
 
-prueba.addEventListener('click', ()=> {
+prueba.addEventListener('click', () => {
     const nuevodiv = document.createElement('div')
     nuevodiv.classList.add('nuevodiv')
-    fetch(" http://localhost:3000/habitaciones/1")
-    .then( res => res.json())
-    .then((datos)=> {
-        console.log(datos)
+
+    for (let i = 1; i < 2; i++) {
+        fetch(` http://localhost:3000/habitaciones/1`)
+            .then(res => res.json())
+            .then((datos) => {
+                console.log(datos)
 
 
-        nuevodiv.innerHTML = `
+                nuevodiv.innerHTML = `
         <div class="grid md:grid-cols-2 gap-6">
                 
         <div class="relative h-64 md:h-full">
@@ -25,7 +27,7 @@ prueba.addEventListener('click', ()=> {
        
         <div class="p-6 md:p-8 flex flex-col justify-center">
           <h2 class="text-3xl font-bold mb-4">${datos.nombre}</h2>
-          <h3 class"text-3xl font-bold mb-4">Precio:$ ${datos.precio}</3>
+          <h3 class"text-3xl font-bold mb-4">Precio: ${datos.precio}</3>
           <p class="text-gray-600 mb-6">
             ${datos.descripcion}
           </p>
@@ -37,11 +39,13 @@ prueba.addEventListener('click', ()=> {
     </div>        
         `;
 
-        
-        contendor.append(nuevodiv)
+
+                contendor.append(nuevodiv)
 
 
-    })
+            })
+
+    }
 })
 
 
