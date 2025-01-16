@@ -25,7 +25,322 @@
         ],
         "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
         "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 3,
+        "nombre": "La Gran Suite",
+        "tipo": "Cuadruple",
+        "camas": 4,
+        "precio": 750,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": false }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo  Con más confort, con cuatro camas dobles y vista al mar."
+      },
+      {
+        "id": 4,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 199,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": false }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 5,
+        "nombre": "Habitación Estándar",
+        "tipo": "Individual",
+        "camas": 1,
+        "precio": 129,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi"],
+        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      },
+      {
+        "id": 6,
+        "nombre": "Habitación Estándar",
+        "tipo": "Individual",
+        "camas": 1,
+        "precio": 139,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi"],
+        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      },
+      {
+        "id": 7,
+        "nombre": "La Gran Suite",
+        "tipo": "Cuadruple",
+        "camas": 4,
+        "precio": 990,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo  Con más confort, con cuatro camas dobles y vista al mar."
+      },
+      {
+        "id": 8,
+        "nombre": "La Gran Suite",
+        "tipo": "Cuadruple",
+        "camas": 4,
+        "precio": 1990,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo  Con más confort, con cuatro camas dobles y vista al mar."
+      },
+      {
+        "id": 9,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 299,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 10,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 349,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 11,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 449,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 12,
+        "nombre": "Habitación Estándar",
+        "tipo": "Individual",
+        "camas": 1,
+        "precio": 199,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi"],
+        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      },
+      {
+        "id": 13,
+        "nombre": "Habitación Estándar",
+        "tipo": "Individual",
+        "camas": 1,
+        "precio": 119,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi"],
+        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      },
+      {
+        "id": 14,
+        "nombre": "Habitación Estándar",
+        "tipo": "Individual",
+        "camas": 1,
+        "precio": 299,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi"],
+        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      },
+      {
+        "id": 15,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 699,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 16,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 799,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 17,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 99,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 18,
+        "nombre": "Habitación Estándar",
+        "tipo": "Individual",
+        "camas": 1,
+        "precio": 899,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi"],
+        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      },
+      {
+        "id": 19,
+        "nombre": "Habitación Estándar",
+        "tipo": "Individual",
+        "camas": 1,
+        "precio": 89,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi"],
+        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      },
+      {
+        "id": 20,
+        "nombre": "Habitación Estándar",
+        "tipo": "Individual",
+        "camas": 1,
+        "precio": 100,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi"],
+        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      },
+      {
+        "id": 21,
+        "nombre": "Habitación Estándar",
+        "tipo": "Individual",
+        "camas": 1,
+        "precio": 699,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi"],
+        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      },
+      {
+        "id": 22,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 949,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 23,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 249,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 24,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 349,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 25,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 349,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 26,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "precio": 349,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
       }
+
+
+
     ],
     
     "usuarios": [
