@@ -19,6 +19,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
         "precio": 250,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -32,6 +33,7 @@
         "nombre": "La Gran Suite",
         "tipo": "Cuadruple",
         "camas": 4,
+        "img":"/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
         "precio": 750,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -87,6 +89,7 @@
         "nombre": "La Gran Suite",
         "tipo": "Cuadruple",
         "camas": 4,
+        "img":"/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
         "precio": 990,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -100,6 +103,7 @@
         "nombre": "La Gran Suite",
         "tipo": "Cuadruple",
         "camas": 4,
+        "img":"/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
         "precio": 1990,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -127,6 +131,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
         "precio": 349,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -154,6 +159,7 @@
         "nombre": "Habitación Estándar",
         "tipo": "Individual",
         "camas": 1,
+        "img":"/Proyecto-Javascript/img/habitacionSencilla.jpeg",
         "precio": 199,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -167,6 +173,7 @@
         "nombre": "Habitación Estándar",
         "tipo": "Individual",
         "camas": 1,
+        "img":"/Proyecto-Javascript/img/habitacion-standar.jpeg",
         "precio": 119,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -180,6 +187,7 @@
         "nombre": "Habitación Estándar",
         "tipo": "Individual",
         "camas": 1,
+        "img":"https://r.profitroom.pl/sarahotelspa/images/rooms/thumbs/1920x1080/202205232054450.1.jpg?updated=2024-10-15_05-43",
         "precio": 299,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -193,6 +201,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
         "precio": 699,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -206,6 +215,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
         "precio": 799,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -219,6 +229,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
         "precio": 99,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -287,6 +298,7 @@
         "id": 22,
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
         "camas": 2,
         "precio": 949,
         "disponibilidad": [
@@ -301,6 +313,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
         "precio": 249,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -314,6 +327,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
         "precio": 349,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -327,6 +341,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
         "precio": 349,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -340,6 +355,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
         "precio": 349,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -347,7 +363,65 @@
         ],
         "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
         "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 27,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+        "precio": 249,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 28,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+        "precio": 649,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+      {
+        "id": 29,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+        "precio": 849,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      },
+
+      {
+        "id": 30,
+        "nombre": "Suite de Lujo",
+        "tipo": "Doble",
+        "camas": 2,
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+        "precio": 549,
+        "disponibilidad": [
+          { "fecha": "2025-01-20", "disponible": true },
+          { "fecha": "2025-01-21", "disponible": true }
+        ],
+        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
+        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
       }
+
 
 
 

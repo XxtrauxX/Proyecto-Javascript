@@ -2,11 +2,15 @@ const prueba = document.querySelector('#prueba')
 const contendor = document.querySelector('#contenidojs')
 const boton = document.querySelector('#boton67')
 const PrinBoton = document.querySelector('#botonsubmit')
+const numeroPer = document.querySelector('#numPersonas')
 
 
-PrinBoton.addEventListener('click', () => {
+PrinBoton.addEventListener('click', (e) => {
 
+  e.preventDefault()
 
+  const NumeroFin = numeroPer.value
+  console.log(NumeroFin)
 
   fetch(`http://localhost:3000/habitaciones/`)
     .then(res => res.json())
@@ -46,8 +50,25 @@ PrinBoton.addEventListener('click', () => {
 
           <br><br>
               `;
+              
+              if (contendor.childElementCount < 30) {
+                contendor.append(nuevodiv)
+            } else {
 
-               contendor.append(nuevodiv)
+               
+            }
+            
+
+            const NewArr = elementos.filter(function(el){
+              return (el.price === 2);
+            });
+
+            
+
+            console.log(NewArr)
+
+
+               //contendor.append(nuevodiv)
 
       });
 
