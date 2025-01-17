@@ -39,6 +39,8 @@
         "camas": 4,
         "img":"/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
         "precio": 750,
+        "estado":"disponible",
+        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-3.html'",
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
           { "fecha": "2025-01-21", "disponible": false }
@@ -53,6 +55,8 @@
         "camas": 2,
         "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
         "precio": 199,
+        "estado":"disponible",
+        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-4.html'",
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
           { "fecha": "2025-01-21", "disponible": false }
@@ -67,6 +71,8 @@
         "camas": 1,
         "img":"/Proyecto-Javascript/img/habitacion-standar.jpeg",
         "precio": 129,
+        "estado":"disponible",
+        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-5.html'",
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
           { "fecha": "2025-01-21", "disponible": true }

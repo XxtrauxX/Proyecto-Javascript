@@ -9,7 +9,7 @@ Pintar()
 function Pintar() {
 
 
-    fetch("http://localhost:3000/habitaciones/2")
+    fetch("http://localhost:3000/habitaciones/4")
         .then(res => res.json())
         .then((datos) => {
 
