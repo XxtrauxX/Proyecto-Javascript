@@ -188,3 +188,124 @@ fetch("https://rickandmortyapi.com/api/character")
     <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Hotel Camila's</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-[#1a237e] text-white">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-serif">CAMILA'S</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="#" class="text-white hover:text-gray-300">Inicio</a>
+                        <a href="#" class="text-white hover:text-gray-300">Reservas</a>
+                        <a href="#" class="text-white hover:text-gray-300 font-semibold">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[300px] bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20de%20Pantalla%202025-01-17%20a%20la(s)%204.32.36%20a.%20m.-QDhw04BFXaLSL32cI7bKvKh1ZD7K2a.png')">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h2 class="text-4xl md:text-5xl text-white font-light">Contáctenos</h2>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Contact Information -->
+            <section class="space-y-8">
+                <h3 class="text-2xl font-light text-gray-900">Información de Contacto</h3>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-map-marker-alt text-[#1a237e] text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Dirección</h4>
+                            <p class="text-gray-600">Av. Principal 123, Ciudad Jardín</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-phone text-[#1a237e] text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Teléfono</h4>
+                            <p class="text-gray-600">+1 234 567 890</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-envelope text-[#1a237e] text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Email</h4>
+                            <p class="text-gray-600">info@hotelcamilas.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="bg-white p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-light text-gray-900 mb-6">Envíenos un mensaje</h3>
+                
+                <form class="space-y-6">
+                    <div class="space-y-2">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#1a237e] focus:border-transparent">
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#1a237e] focus:border-transparent">
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="subject" class="block text-sm font-medium text-gray-700">Asunto</label>
+                        <input type="text" id="subject" name="subject" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#1a237e] focus:border-transparent">
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#1a237e] focus:border-transparent"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-[#1a237e] text-white py-3 px-6 rounded-md hover:bg-[#2a337e] transition-colors duration-200">
+                        Enviar mensaje
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a237e] text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center">
+                <p class="text-sm">&copy; 2025 Hotel Camila's. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

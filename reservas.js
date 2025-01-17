@@ -3,6 +3,8 @@ const contendor = document.querySelector('#contenidojs')
 const boton = document.querySelector('#boton67')
 const PrinBoton = document.querySelector('#botonsubmit')
 const numeroPer = document.querySelector('#numPersonas')
+const BotonRedirec = document.querySelector('#redi')
+
 
 
 PrinBoton.addEventListener('click', (e) => {
@@ -43,7 +45,7 @@ PrinBoton.addEventListener('click', (e) => {
                 </p>
                 
           
-                  <button class="inline-flex justify-center items-center px-6 py-3 rounded-lg bg-blue-900 text-white font-medium hover:bg-blue-800 transition-colors w-full sm:w-auto text-center"> VER DETALLES</button>
+                  <button id="redi" class="inline-flex justify-center items-center px-6 py-3 rounded-lg bg-blue-900 text-white font-medium hover:bg-blue-800 transition-colors w-full sm:w-auto text-center"> VER DETALLES</button>
               </div>
             </div>
           </div>        
@@ -58,6 +60,7 @@ PrinBoton.addEventListener('click', (e) => {
                
             }
             
+            /*
 
             const NewArr = elementos.filter(function(el){
               return (el.price === 2);
@@ -67,6 +70,8 @@ PrinBoton.addEventListener('click', (e) => {
 
             console.log(NewArr)
 
+            */
+
 
                //contendor.append(nuevodiv)
 
@@ -74,10 +79,19 @@ PrinBoton.addEventListener('click', (e) => {
 
 
      
+      
 
     })
 
+    
 
+})
+
+
+BotonRedirec.addEventListener('click', () => {
+        
+  alert("Gracias por su registro!!")
+ 
 })
 
 
