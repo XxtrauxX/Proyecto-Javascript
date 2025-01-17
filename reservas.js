@@ -45,7 +45,7 @@ PrinBoton.addEventListener('click', (e) => {
                 </p>
                 
           
-                  <button id="redi" class="inline-flex justify-center items-center px-6 py-3 rounded-lg bg-blue-900 text-white font-medium hover:bg-blue-800 transition-colors w-full sm:w-auto text-center"> VER DETALLES</button>
+                  <button onclick="${elementos.boton}" class="inline-flex justify-center items-center px-6 py-3 rounded-lg bg-blue-900 text-white font-medium hover:bg-blue-800 transition-colors w-full sm:w-auto text-center"> VER DETALLES</button>
               </div>
             </div>
           </div>        
@@ -75,6 +75,8 @@ PrinBoton.addEventListener('click', (e) => {
 
                //contendor.append(nuevodiv)
 
+               const BotonRedirec = document.querySelector('#redi')
+
       });
 
 
@@ -88,8 +90,8 @@ PrinBoton.addEventListener('click', (e) => {
 })
 
 
-BotonRedirec.addEventListener('click', () => {
-        
+BotonRedirec.addEventListener('click', (e) => {
+        e.preventDefault()
   alert("Gracias por su registro!!")
  
 })
