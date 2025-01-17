@@ -5,6 +5,7 @@
         "nombre": "Habitación Estándar",
         "tipo": "Individual",
         "camas": 1,
+        "img":"/Proyecto-Javascript/img/habitacion-standar.jpeg",
         "precio": 100,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -44,6 +45,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
         "precio": 199,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -57,6 +59,7 @@
         "nombre": "Habitación Estándar",
         "tipo": "Individual",
         "camas": 1,
+        "img":"/Proyecto-Javascript/img/habitacion-standar.jpeg",
         "precio": 129,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -70,6 +73,7 @@
         "nombre": "Habitación Estándar",
         "tipo": "Individual",
         "camas": 1,
+        "img":"/Proyecto-Javascript/img/habitacion-standar.jpeg",
         "precio": 139,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -109,6 +113,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
         "precio": 299,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -135,6 +140,7 @@
         "nombre": "Suite de Lujo",
         "tipo": "Doble",
         "camas": 2,
+        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
         "precio": 449,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -226,6 +232,7 @@
         "nombre": "Habitación Estándar",
         "tipo": "Individual",
         "camas": 1,
+        "img":"/Proyecto-Javascript/img/habitacionSencilla.jpeg",
         "precio": 899,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -239,6 +246,7 @@
         "nombre": "Habitación Estándar",
         "tipo": "Individual",
         "camas": 1,
+        "img":"/Proyecto-Javascript/img/habitacionSencilla.jpeg",
         "precio": 89,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -252,6 +260,7 @@
         "nombre": "Habitación Estándar",
         "tipo": "Individual",
         "camas": 1,
+        "img":"/Proyecto-Javascript/img/habitacionSencilla.jpeg",
         "precio": 100,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },
@@ -265,6 +274,7 @@
         "nombre": "Habitación Estándar",
         "tipo": "Individual",
         "camas": 1,
+        "img":"/Proyecto-Javascript/img/Habitaciones.jpeg",
         "precio": 699,
         "disponibilidad": [
           { "fecha": "2025-01-20", "disponible": true },

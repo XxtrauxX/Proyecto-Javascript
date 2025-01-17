@@ -113,3 +113,78 @@ OBTENER /contacto : Obt
               </div>
             </div>
           </section>
+
+
+
+          let contenedorPersonajes = document.getElementById("personajes")
+
+fetch("https://rickandmortyapi.com/api/character")
+.then((res)=> res.json())
+.then((datos)=> {
+
+    console.log(datos)
+    console.log(datos.results)
+    
+    datos.results.forEach(elementos => {
+
+        //console.log(elementos.name)
+
+        const contenedorCreado = document.createElement('div')
+        contenedorCreado.innerHTML = `
+            <h4>${elementos.name}</h4>
+            <img src="${elementos.image}">
+
+        
+        `;
+
+        contenedorPersonajes.append(contenedorCreado)
+    });
+
+    
+})
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón de WhatsApp</title>
+    <style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+        .whatsapp-button a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="whatsapp-button">
+        <a href="https://wa.me/1234567890" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Incluye Font Awesome para el ícono de WhatsApp -->
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
