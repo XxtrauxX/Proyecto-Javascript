@@ -143,3 +143,18 @@ video {
     text-decoration: none;
     color: white;
 }
+
+
+#inicio-sesion{
+
+    background-color: rgb(19, 112, 143);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#salir {
+
+    background-color: rgb(111, 141, 180);
+    padding: 10px;
+    border-radius: 10px;
+}

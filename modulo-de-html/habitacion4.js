@@ -1,6 +1,17 @@
 const contendor = document.querySelector('#contenedor')
 const boton = document.querySelector('#prueba')
+const reserva = document.querySelector('#reserva')
 
+
+reserva.addEventListener('click', ()=> {
+
+    const user = JSON.parse(localStorage.getItem('login_success')) || false
+    if(!user) {
+        window.location.href = '/Proyecto-Javascript/login.html'
+    } 
+
+    alert("Ya estas registrado")
+})
 
 
 Pintar()
@@ -28,7 +39,7 @@ function Pintar() {
             >
         </div>
     
-        <!-- Contenido -->
+       
         <div class="w-full md:w-1/2 p-6 space-y-6">
             <header>
                 <h1 class="text-3xl font-bold text-gray-900 mb-4">${datos.nombre}</h1>
@@ -46,21 +57,14 @@ function Pintar() {
                     ${datos.disponibilidad[0].fecha} , 
                     ${datos.disponibilidad[1].fecha}
                 </span>
-                <span class="inline-flex items-center px-4 py-2 rounded-full bg-gray-100 text-sm font-medium text-gray-800">
+                <span class="inline-flex items-center px-4 py-2 rounded-full bg-blue-200 text-sm font-medium text-gray-800">
                     
                     <p> Estado: ${datos.estado}</p>
                 </span>
             </div>
     
-            <!-- Botón CTA -->
-            <div class="pt-4">
-                <a 
-                    href="#" 
-                    class="inline-block px-6 py-3 bg-[#00264C] text-white font-medium rounded hover:bg-[#003366] transition-colors duration-200"
-                >
-                    RESERVAR
-                </a>
-            </div>
+            
+            
         </div>
     </article>
     </main>`;

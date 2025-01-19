@@ -5,6 +5,7 @@ const BotonHero = document.querySelector('#botonhero')
 const boton4 = document.querySelector('#boton4')
 const boton5 = document.querySelector('.boton5')
 const correoBoton = document.querySelector('#correo')
+const BotonInicio = document.querySelector('#inicio-sesion')
 
 
 
@@ -38,6 +39,16 @@ correoBoton.addEventListener('click', (e)=> {
   
 })
 
+
+BotonInicio.addEventListener('click', (e)=> {
+  e.preventDefault()
+  const user = JSON.parse(localStorage.getItem('login_success')) || false
+    if(!user) {
+        window.location.href = '/Proyecto-Javascript/index.html'
+    } 
+    BotonInicio.textContent = "Sesion iniciada"
+    alert("Ya estas registrado")
+})
 
 
 
