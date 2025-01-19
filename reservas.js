@@ -4,6 +4,14 @@ const boton = document.querySelector('#boton67')
 const PrinBoton = document.querySelector('#botonsubmit')
 const numeroPer = document.querySelector('#numPersonas')
 const BotonRedirec = document.querySelector('#redi')
+const formulario = document.querySelector('#formulario')
+const FechaInicios = document.querySelector('#fechaInicio')
+const FechaFin = document.querySelector('#fechaFin')
+
+
+
+
+
 
 
 
@@ -11,6 +19,10 @@ PrinBoton.addEventListener('click', (e) => {
 
   e.preventDefault()
 
+  const fechaInicio = FechaInicios.value
+  console.log(fechaInicio)
+  const resul = FechaFin.value
+  console.log(resul)
   const NumeroFin = numeroPer.value
   console.log(NumeroFin)
 

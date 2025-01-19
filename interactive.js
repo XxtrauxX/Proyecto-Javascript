@@ -6,8 +6,24 @@ const boton4 = document.querySelector('#boton4')
 const boton5 = document.querySelector('.boton5')
 const correoBoton = document.querySelector('#correo')
 const BotonInicio = document.querySelector('#inicio-sesion')
+const BotonSalir = document.querySelector('#salir')
 
 
+/*
+BotonInicio()
+
+function BotonInicio(){
+  const user = JSON.parse(localStorage.getItem('login_success')) || false
+    if(!user) {
+      BotonInicio.textContent = "I Sesión"
+    } 
+    else {
+
+      BotonInicio.textContent = "Sesión Iniciada"
+    }
+   
+}
+*/
 
 
 BotonHero.addEventListener('click', ()=> {
@@ -44,11 +60,20 @@ BotonInicio.addEventListener('click', (e)=> {
   e.preventDefault()
   const user = JSON.parse(localStorage.getItem('login_success')) || false
     if(!user) {
-        window.location.href = '/Proyecto-Javascript/index.html'
+        window.location.href = '/Proyecto-Javascript/login.html'
     } 
     BotonInicio.textContent = "Sesion iniciada"
     alert("Ya estas registrado")
 })
 
+
+
+
+BotonSalir.addEventListener('click', (e)=>{
+  e.preventDefault()
+    alert('Hasta pronto!')
+    localStorage.removeItem('login_success')
+    //window.location.href = '/Proyecto-Javascript/index.html'
+})
 
 
