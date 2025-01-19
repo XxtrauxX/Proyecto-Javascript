@@ -1,535 +1,855 @@
 {
-    "habitaciones": [
-      {
-        "id": 1,
-        "nombre": "Habitación Estándar",
-        "tipo": "Individual",
-        "camas": 1,
-        "img":"/Proyecto-Javascript/img/habitacion-standar.jpeg",
-        "precio": 100,
-        "boton":"window.location.href='/Proyecto-Javascript/reservasDos.html';",
-        "fetch":"http://localhost:3000/habitaciones/1",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi"],
-        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
-      },
-      {
-        "id": 2,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "precio": 250,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-2.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": false }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 3,
-        "nombre": "La Gran Suite",
-        "tipo": "Cuadruple",
-        "camas": 4,
-        "img":"/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
-        "precio": 750,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-3.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": false }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo  Con más confort, con cuatro camas dobles y vista al mar."
-      },
-      {
-        "id": 4,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "precio": 199,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-4.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": false }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 5,
-        "nombre": "Habitación Estándar",
-        "tipo": "Individual",
-        "camas": 1,
-        "img":"/Proyecto-Javascript/img/habitacion-standar.jpeg",
-        "precio": 129,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-5.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi"],
-        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
-      },
-      {
-        "id": 6,
-        "nombre": "Habitación Estándar",
-        "tipo": "Individual",
-        "camas": 1,
-        "img":"/Proyecto-Javascript/img/habitacion-standar.jpeg",
-        "precio": 139,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-6.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi"],
-        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
-      },
-      {
-        "id": 7,
-        "nombre": "La Gran Suite",
-        "tipo": "Cuadruple",
-        "camas": 4,
-        "img":"/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
-        "precio": 990,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-7.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo  Con más confort, con cuatro camas dobles y vista al mar."
-      },
-      {
-        "id": 8,
-        "nombre": "La Gran Suite",
-        "tipo": "Cuadruple",
-        "camas": 4,
-        "img":"/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
-        "precio": 1990,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-8.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo  Con más confort, con cuatro camas dobles y vista al mar."
-      },
-      {
-        "id": 9,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "precio": 299,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-9.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 10,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
-        "precio": 349,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-10.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 11,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "precio": 449,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-11.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 12,
-        "nombre": "Habitación Estándar",
-        "tipo": "Individual",
-        "camas": 1,
-        "img":"/Proyecto-Javascript/img/habitacionSencilla.jpeg",
-        "precio": 199,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-12.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi"],
-        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
-      },
-      {
-        "id": 13,
-        "nombre": "Habitación Estándar",
-        "tipo": "Individual",
-        "camas": 1,
-        "img":"/Proyecto-Javascript/img/habitacion-standar.jpeg",
-        "precio": 119,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-13.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi"],
-        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
-      },
-      {
-        "id": 14,
-        "nombre": "Habitación Estándar",
-        "tipo": "Individual",
-        "camas": 1,
-        "img":"https://r.profitroom.pl/sarahotelspa/images/rooms/thumbs/1920x1080/202205232054450.1.jpg?updated=2024-10-15_05-43",
-        "precio": 299,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-14.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi"],
-        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
-      },
-      {
-        "id": 15,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
-        "precio": 699,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-15.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 16,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
-        "precio": 799,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-16.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 17,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "precio": 99,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-17.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 18,
-        "nombre": "Habitación Estándar",
-        "tipo": "Individual",
-        "camas": 1,
-        "img":"/Proyecto-Javascript/img/habitacionSencilla.jpeg",
-        "precio": 899,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-18.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi"],
-        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
-      },
-      {
-        "id": 19,
-        "nombre": "Habitación Estándar",
-        "tipo": "Individual",
-        "camas": 1,
-        "img":"/Proyecto-Javascript/img/habitacionSencilla.jpeg",
-        "precio": 89,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-19.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi"],
-        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
-      },
-      {
-        "id": 20,
-        "nombre": "Habitación Estándar",
-        "tipo": "Individual",
-        "camas": 1,
-        "img":"/Proyecto-Javascript/img/habitacionSencilla.jpeg",
-        "precio": 100,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-20.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi"],
-        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
-      },
-      {
-        "id": 21,
-        "nombre": "Habitación Estándar",
-        "tipo": "Individual",
-        "camas": 1,
-        "img":"/Proyecto-Javascript/img/Habitaciones.jpeg",
-        "precio": 699,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-21.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi"],
-        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
-      },
-      {
-        "id": 22,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "camas": 2,
-        "precio": 949,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-22.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 23,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
-        "precio": 249,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-23.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 24,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
-        "precio": 349,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-24.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 25,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "precio": 349,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-25.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 26,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "precio": 349,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-26.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 27,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "precio": 249,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-27.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 28,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "precio": 649,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-28.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-      {
-        "id": 29,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "precio": 849,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-29.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      },
-
-      {
-        "id": 30,
-        "nombre": "Suite de Lujo",
-        "tipo": "Doble",
-        "camas": 2,
-        "img":"/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        "precio": 549,
-        "estado":"disponible",
-        "boton":"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-30.html'",
-        "disponibilidad": [
-          { "fecha": "2025-01-20", "disponible": true },
-          { "fecha": "2025-01-21", "disponible": true }
-        ],
-        "servicios": ["Internet", "Minibar", "Jacuzzi", "Vista panorámica"],
-        "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
-      }
-
-
-
-
-    ],
-    
-    "usuarios": [
-      {
-        "id": 1,
-        "nombre": "Juan Pérez",
-        "email": "juan@correo.com",
-        "password": "contraseña123",
-        "telefono": "+1234567890",
-        "reservas": [
-          {
-            "id_habitacion": 1,
-            "fecha_inicio": "2025-01-20",
-            "fecha_fin": "2025-01-22",
-            "estado": "confirmada"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "nombre": "Ana Gómez",
-        "email": "ana@correo.com",
-        "password": "contraseña456",
-        "telefono": "+0987654321",
-        "reservas": []
-      }
-    ],
-  
-    "reservas": [
-      {
-        "id": 1,
-        "id_usuario": 1,
-        "id_habitacion": 1,
-        "fecha_inicio": "2025-01-20",
-        "fecha_fin": "2025-01-22",
-        "cantidad_personas": 1,
-        "total": 200,
-        "estado": "confirmada"
-      }
-    ],
-  
-    "contacto": {
-      "direccion": "Calle Ficticia 123, Ciudad X",
-      "telefono": "+1234567890",
-      "whatsapp": "https://wa.me/1234567890",
-      "email": "contacto@rincondecamila.com"
+  "habitaciones": [
+    {
+      "id": 1,
+      "nombre": "Habitación Estándar",
+      "tipo": "Individual",
+      "camas": 1,
+      "img": "/Proyecto-Javascript/img/habitacion-standar.jpeg",
+      "precio": 100,
+      "boton": "window.location.href='/Proyecto-Javascript/reservasDos.html';",
+      "fetch": "http://localhost:3000/habitaciones/1",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi"
+      ],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+    },
+    {
+      "id": 2,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 250,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-2.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": false
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 3,
+      "nombre": "La Gran Suite",
+      "tipo": "Cuadruple",
+      "camas": 4,
+      "img": "/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
+      "precio": 750,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-3.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": false
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo  Con más confort, con cuatro camas dobles y vista al mar."
+    },
+    {
+      "id": 4,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 199,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-4.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": false
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 5,
+      "nombre": "Habitación Estándar",
+      "tipo": "Individual",
+      "camas": 1,
+      "img": "/Proyecto-Javascript/img/habitacion-standar.jpeg",
+      "precio": 129,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-5.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi"
+      ],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+    },
+    {
+      "id": 6,
+      "nombre": "Habitación Estándar",
+      "tipo": "Individual",
+      "camas": 1,
+      "img": "/Proyecto-Javascript/img/habitacion-standar.jpeg",
+      "precio": 139,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-6.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi"
+      ],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+    },
+    {
+      "id": 7,
+      "nombre": "La Gran Suite",
+      "tipo": "Cuadruple",
+      "camas": 4,
+      "img": "/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
+      "precio": 990,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-7.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo  Con más confort, con cuatro camas dobles y vista al mar."
+    },
+    {
+      "id": 8,
+      "nombre": "La Gran Suite",
+      "tipo": "Cuadruple",
+      "camas": 4,
+      "img": "/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
+      "precio": 1990,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-8.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo  Con más confort, con cuatro camas dobles y vista al mar."
+    },
+    {
+      "id": 9,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 299,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-9.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 10,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
+      "precio": 349,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-10.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 11,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 449,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-11.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 12,
+      "nombre": "Habitación Estándar",
+      "tipo": "Individual",
+      "camas": 1,
+      "img": "/Proyecto-Javascript/img/habitacionSencilla.jpeg",
+      "precio": 199,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-12.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi"
+      ],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+    },
+    {
+      "id": 13,
+      "nombre": "Habitación Estándar",
+      "tipo": "Individual",
+      "camas": 1,
+      "img": "/Proyecto-Javascript/img/habitacion-standar.jpeg",
+      "precio": 119,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-13.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi"
+      ],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+    },
+    {
+      "id": 14,
+      "nombre": "Habitación Estándar",
+      "tipo": "Individual",
+      "camas": 1,
+      "img": "https://r.profitroom.pl/sarahotelspa/images/rooms/thumbs/1920x1080/202205232054450.1.jpg?updated=2024-10-15_05-43",
+      "precio": 299,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-14.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi"
+      ],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+    },
+    {
+      "id": 15,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
+      "precio": 699,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-15.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 16,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
+      "precio": 799,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-16.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 17,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 99,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-17.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 18,
+      "nombre": "Habitación Estándar",
+      "tipo": "Individual",
+      "camas": 1,
+      "img": "/Proyecto-Javascript/img/habitacionSencilla.jpeg",
+      "precio": 899,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-18.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi"
+      ],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+    },
+    {
+      "id": 19,
+      "nombre": "Habitación Estándar",
+      "tipo": "Individual",
+      "camas": 1,
+      "img": "/Proyecto-Javascript/img/habitacionSencilla.jpeg",
+      "precio": 89,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-19.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi"
+      ],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+    },
+    {
+      "id": 20,
+      "nombre": "Habitación Estándar",
+      "tipo": "Individual",
+      "camas": 1,
+      "img": "/Proyecto-Javascript/img/habitacionSencilla.jpeg",
+      "precio": 100,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-20.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi"
+      ],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+    },
+    {
+      "id": 21,
+      "nombre": "Habitación Estándar",
+      "tipo": "Individual",
+      "camas": 1,
+      "img": "/Proyecto-Javascript/img/Habitaciones.jpeg",
+      "precio": 699,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-21.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi"
+      ],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+    },
+    {
+      "id": 22,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "camas": 2,
+      "precio": 949,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-22.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 23,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
+      "precio": 249,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-23.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 24,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
+      "precio": 349,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-24.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 25,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 349,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-25.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 26,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 349,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-26.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 27,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 249,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-27.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 28,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 649,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-28.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 29,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 849,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-29.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+    },
+    {
+      "id": 30,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 549,
+      "estado": "disponible",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-30.html'",
+      "disponibilidad": [
+        {
+          "fecha": "2025-01-20",
+          "disponible": true
+        },
+        {
+          "fecha": "2025-01-21",
+          "disponible": true
+        }
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi",
+        "Vista panorámica"
+      ],
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
     }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "email": "juan@correo.com",
+      "password": "contraseña123",
+      "telefono": "+1234567890",
+      "reservas": [
+        {
+          "id_habitacion": 1,
+          "fecha_inicio": "2025-01-20",
+          "fecha_fin": "2025-01-22",
+          "estado": "confirmada"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Ana Gómez",
+      "email": "ana@correo.com",
+      "password": "contraseña456",
+      "telefono": "+0987654321",
+      "reservas": []
+    },
+    {
+      "id": 3,
+      "nombre": "Oscar Diaz",
+      "email": "aaronjones2429@gamil.com",
+      "password": "contraseña456",
+      "telefono": "+0987654321",
+      "reservas": []
+    }
+  ],
+  "reservas": [
+    {
+      "id": 1,
+      "id_usuario": 1,
+      "id_habitacion": 1,
+      "fecha_inicio": "2025-01-20",
+      "fecha_fin": "2025-01-22",
+      "cantidad_personas": 1,
+      "total": 200,
+      "estado": "confirmada"
+    }
+  ],
+  "contacto": {
+    "direccion": "Calle Ficticia 123, Ciudad X",
+    "telefono": "+1234567890",
+    "whatsapp": "https://wa.me/1234567890",
+    "email": "contacto@rincondecamila.com"
   }
+}

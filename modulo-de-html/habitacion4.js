@@ -1,6 +1,11 @@
 const contendor = document.querySelector('#contenedor')
 const boton = document.querySelector('#prueba')
 const reserva = document.querySelector('#reserva')
+const button = document.querySelector('.button')
+const modal = document.querySelector('.modal')
+
+
+
 
 
 reserva.addEventListener('click', ()=> {
@@ -11,6 +16,40 @@ reserva.addEventListener('click', ()=> {
     } 
 
     alert("Ya estas registrado")
+
+    const datos = {
+        id: 3,
+      nombre: "Oscar Diaz",
+      email: "aaronjones2429@gamil.com",
+      password: "contraseña456",
+      telefono: "+0987654321",
+      reservas: []
+    };
+    
+    fetch("http://localhost:3000/usuarios", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(datos),
+    })
+    .then((res) => {
+        // Verificamos el código de estado de la respuesta
+        if (!res.ok) {
+            // Si la respuesta no es 200 OK, lanza un error
+            throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        return res.json(); // Devolvemos el cuerpo como JSON si la respuesta fue exitosa
+    })
+    .then((datos) => {
+        console.log("Respuesta de la API:", datos);
+    })
+    .catch((error) => {
+        // Imprimimos un mensaje de error en caso de que algo falle
+        console.error('Error:', error);
+    });
+    
+
 })
 
 
@@ -73,3 +112,11 @@ function Pintar() {
         })
 
 }
+
+
+
+button.addEventListener('click',function(){
+    console.log(modal.classList);
+    modal.classList.add('show');
+    console.log(modal.classList)
+})
