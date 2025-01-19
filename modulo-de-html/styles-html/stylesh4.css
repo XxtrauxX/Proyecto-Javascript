@@ -49,9 +49,7 @@ button, .modal_cta {
     display: grid;
     place-items: center;
     inset: 0;
-    background-color: black;
-
-
+    background-color: rgb(34, 36, 36);
     transition: opacity .3s;
     pointer-events: none;
     opacity: 0;

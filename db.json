@@ -827,8 +827,8 @@
     },
     {
       "id": 3,
-      "nombre": "Oscar Diaz",
-      "email": "aaronjones2429@gamil.com",
+      "nombre": "Oscar",
+      "email": "aaronjones@gmail.com",
       "password": "contraseña456",
       "telefono": "+0987654321",
       "reservas": []

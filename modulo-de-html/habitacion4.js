@@ -1,26 +1,40 @@
 const contendor = document.querySelector('#contenedor')
 const boton = document.querySelector('#prueba')
 const reserva = document.querySelector('#reserva')
-const button = document.querySelector('.button')
+const button = document.querySelector('#button')
 const modal = document.querySelector('.modal')
+const CerrarMenu = document.querySelector('.modal_close');
+const botonConfirmar = document.querySelector('#confirmar');
+const Inputnombre = document.querySelector('#nombreform')
 
 
+CerrarMenu.addEventListener('click', function(){
+    modal.classList.remove('show');
 
+})
 
-
-reserva.addEventListener('click', ()=> {
-
+reserva.addEventListener('click', (e)=> {
+    e.preventDefault()
     const user = JSON.parse(localStorage.getItem('login_success')) || false
     if(!user) {
         window.location.href = '/Proyecto-Javascript/login.html'
     } 
-
+  /*
     alert("Ya estas registrado")
+    modal.classList.add('show');
+
+    const NombreTitular = Inputnombre.value
+    console.log(NombreTitular)
+
+    */
+
+    console.log(user.email)
+    
 
     const datos = {
         id: 3,
-      nombre: "Oscar Diaz",
-      email: "aaronjones2429@gamil.com",
+      nombre: user.name,
+      email: user.email,
       password: "contraseña456",
       telefono: "+0987654321",
       reservas: []
@@ -34,20 +48,24 @@ reserva.addEventListener('click', ()=> {
         body: JSON.stringify(datos),
     })
     .then((res) => {
-        // Verificamos el código de estado de la respuesta
+       
         if (!res.ok) {
-            // Si la respuesta no es 200 OK, lanza un error
+           
             throw new Error(`HTTP error! Status: ${res.status}`);
         }
-        return res.json(); // Devolvemos el cuerpo como JSON si la respuesta fue exitosa
+        return res.json(); 
     })
     .then((datos) => {
         console.log("Respuesta de la API:", datos);
     })
     .catch((error) => {
-        // Imprimimos un mensaje de error en caso de que algo falle
+      
         console.error('Error:', error);
     });
+    
+
+    alert("Reserva Exitosa")
+
     
 
 })
@@ -113,10 +131,12 @@ function Pintar() {
 
 }
 
-
+/*
 
 button.addEventListener('click',function(){
     console.log(modal.classList);
     modal.classList.add('show');
     console.log(modal.classList)
 })
+
+*/
