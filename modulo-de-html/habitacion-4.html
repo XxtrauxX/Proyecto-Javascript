@@ -28,48 +28,57 @@
         </div>
     </header>
 
-    
+
 
     <div id="contenedor"></div>
 
     <div class="wrapper">
 
-        <button   class="inline-block px-6 py-3 bg-[#00264C] m-9  ml-2 mx-auto  text-white font-medium rounded hover:bg-[#003366] transition-colors duration-200" id="button">RESERVAR</button>
+        <button
+            class="inline-block px-6 py-3 bg-[#00264C] m-9  ml-2 mx-auto  text-white font-medium rounded hover:bg-[#003366] transition-colors duration-200"
+            id="button">RESERVAR</button>
     </div>
-    
+
 
     <button id="reserva" href="#"
-    class="inline-block px-6 py-3 bg-[#00264C] m-9  ml-2 mx-auto  text-white font-medium rounded hover:bg-[#003366] transition-colors duration-200">
-    RESERVAR
-</button>
+        class="inline-block px-6 py-3 bg-[#00264C] m-9  ml-2 mx-auto  text-white font-medium rounded hover:bg-blue-500 transition-colors duration-200">
+        RESERVAR
+    </button>
 
 
-<section class="modal">
-    <div class="modal_container">
-        <div class="modal_close">
-            x
+    <button id="eliminar" href="#"
+        class="inline-block px-6 py-3 bg-[#00264C] m-9  ml-2 mx-auto  text-white font-medium rounded hover:bg-red-500 transition-colors duration-200">
+        Eliminar Reserva
+    </button>
+
+
+    <section class="modal">
+        <div class="modal_container">
+            <div class="modal_close">
+                x
+            </div>
+
+            <form class="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg">
+                <h2 class="text-xl font-semibold mb-4">Nombre del titular de la reserva</h2>
+                <input id="nombreform" type="text" name="nombre" placeholder="Escriba su nombre"
+                    class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                <h2 class="text-xl font-semibold mb-4">Correo Electrónico</h2>
+                <input type="email" id="correo" placeholder="Ingrese su Correo"
+                    class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                <h2 class="text-xl font-semibold mb-4">Número de Tarjeta</h2>
+                <input type="number" id="tarjeta" placeholder="Ingrese su número de Tarjeta"
+                    class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                <button type="submit" id="confirmar"
+                    class="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition duration-200">
+                    Confirmar
+                </button>
+            </form>
+
         </div>
-
-        <form class="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg">
-            <h2 class="text-xl font-semibold mb-4">Nombre del titular de la reserva</h2>
-            <input id="nombreform" type="text" name="nombre" placeholder="Escriba su nombre"
-                   class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
-        
-            <h2 class="text-xl font-semibold mb-4">Correo Electrónico</h2>
-            <input type="email" id="correo" placeholder="Ingrese su Correo"
-                   class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
-        
-            <h2 class="text-xl font-semibold mb-4">Número de Tarjeta</h2>
-            <input type="number" id="tarjeta" placeholder="Ingrese su número de Tarjeta"
-                   class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
-        
-            <button type="submit" id="confirmar" class="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition duration-200">
-                Confirmar
-            </button>
-        </form>
-        
-    </div>
-</section>
+    </section>
 
 </body>
 <script src="habitacion4.js"></script>

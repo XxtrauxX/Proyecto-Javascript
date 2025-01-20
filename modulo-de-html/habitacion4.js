@@ -6,40 +6,92 @@ const modal = document.querySelector('.modal')
 const CerrarMenu = document.querySelector('.modal_close');
 const botonConfirmar = document.querySelector('#confirmar');
 const Inputnombre = document.querySelector('#nombreform')
+const BotonEliminar = document.querySelector('#eliminar')
 
+/*
 
-CerrarMenu.addEventListener('click', function(){
+BotonEliminar.addEventListener('click', () => {
+
+    alert("prueba perros")
+    const postId = 4;
+    const data = {
+        id: 4,
+        nombre: "Suite de Lujo",
+        tipo: "Doble",
+        camas: 2,
+        img: "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+        precio: 199,
+        estado: "ocupada",
+        boton: "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-4.html'",
+        disponibilidad: [
+          {
+            fecha: "2025-01-20",
+            disponible: true
+          },
+          {
+            fecha: "2025-01-21",
+            disponible: false
+          }
+        ],
+        "servicios": [
+          "Internet",
+          "Minibar",
+          "Jacuzzi",
+          "Vista panorámica"
+        ],
+        descripcion: "Suite de lujo con dos camas dobles y vista al mar."
+      
+    };
+
+    fetch(`http://localhost:3000/habitaciones/${postId}`,
+        {
+            method: "PUT",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
+
+})
+
+*/
+
+CerrarMenu.addEventListener('click', function () {
     modal.classList.remove('show');
 
 })
 
-reserva.addEventListener('click', (e)=> {
+reserva.addEventListener('click', (e) => {
     e.preventDefault()
     const user = JSON.parse(localStorage.getItem('login_success')) || false
-    if(!user) {
+    if (!user) {
         window.location.href = '/Proyecto-Javascript/login.html'
-    } 
-  /*
-    alert("Ya estas registrado")
-    modal.classList.add('show');
-
-    const NombreTitular = Inputnombre.value
-    console.log(NombreTitular)
-
-    */
+    }
+    /*
+      alert("Ya estas registrado")
+      modal.classList.add('show');
+  
+      const NombreTitular = Inputnombre.value
+      console.log(NombreTitular)
+  
+      */
 
     console.log(user.email)
-    
+
 
     const datos = {
         id: 3,
-      nombre: user.name,
-      email: user.email,
-      password: "contraseña456",
-      telefono: "+0987654321",
-      reservas: []
+        nombre: user.name,
+        email: user.email,
+        password: "contraseña456",
+        telefono: "+0987654321",
+        reservas: []
     };
-    
+
     fetch("http://localhost:3000/usuarios", {
         method: "POST",
         headers: {
@@ -47,26 +99,71 @@ reserva.addEventListener('click', (e)=> {
         },
         body: JSON.stringify(datos),
     })
-    .then((res) => {
-       
-        if (!res.ok) {
-           
-            throw new Error(`HTTP error! Status: ${res.status}`);
-        }
-        return res.json(); 
-    })
-    .then((datos) => {
-        console.log("Respuesta de la API:", datos);
-    })
-    .catch((error) => {
-      
-        console.error('Error:', error);
-    });
-    
+        .then((res) => {
+
+            if (!res.ok) {
+
+                throw new Error(`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then((datos) => {
+            console.log("Respuesta de la API:", datos);
+        })
+        .catch((error) => {
+
+            console.error('Error:', error);
+        });
+
 
     alert("Reserva Exitosa")
 
-    
+
+    alert("prueba perros")
+    const postId = 4;
+    const data = {
+        id: 4,
+        nombre: "Suite de Lujo",
+        tipo: "Doble",
+        camas: 2,
+        img: "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+        precio: 199,
+        estado: "ocupada",
+        boton: "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-4.html'",
+        disponibilidad: [
+          {
+            fecha: "2025-01-20",
+            disponible: true
+          },
+          {
+            fecha: "2025-01-21",
+            disponible: false
+          }
+        ],
+        "servicios": [
+          "Internet",
+          "Minibar",
+          "Jacuzzi",
+          "Vista panorámica"
+        ],
+        descripcion: "Suite de lujo con dos camas dobles y vista al mar."
+      
+    };
+
+    fetch(`http://localhost:3000/habitaciones/${postId}`,
+        {
+            method: "PUT",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
+
+
 
 })
 

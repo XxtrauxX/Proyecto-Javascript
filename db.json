@@ -60,7 +60,7 @@
       "camas": 4,
       "img": "/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
       "precio": 750,
-      "estado": "disponible",
+      "estado": "ocupada",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-3.html'",
       "disponibilidad": [
         {
@@ -821,14 +821,6 @@
       "id": 2,
       "nombre": "Ana Gómez",
       "email": "ana@correo.com",
-      "password": "contraseña456",
-      "telefono": "+0987654321",
-      "reservas": []
-    },
-    {
-      "id": 3,
-      "nombre": "Oscar",
-      "email": "aaronjones@gmail.com",
       "password": "contraseña456",
       "telefono": "+0987654321",
       "reservas": []
