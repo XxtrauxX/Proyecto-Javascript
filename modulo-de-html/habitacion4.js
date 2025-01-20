@@ -7,6 +7,9 @@ const CerrarMenu = document.querySelector('.modal_close');
 const botonConfirmar = document.querySelector('#confirmar');
 const Inputnombre = document.querySelector('#nombreform')
 const BotonEliminar = document.querySelector('#eliminar')
+const datosContenedor = document.querySelector('#datos')
+const idHtml = 4;
+
 
 /*
 
@@ -84,15 +87,20 @@ reserva.addEventListener('click', (e) => {
 
 
     const datos = {
-        id: 3,
+        id: 4,
         nombre: user.name,
         email: user.email,
         password: "contraseña456",
         telefono: "+0987654321",
-        reservas: []
+        fechas: [
+            {
+                fecha_inicio:"2025-1-20",
+                fecha_final:"2025-1-22"
+            }
+        ]
     };
 
-    fetch("http://localhost:3000/usuarios", {
+    fetch("http://localhost:3000/reservas", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -119,7 +127,7 @@ reserva.addEventListener('click', (e) => {
     alert("Reserva Exitosa")
 
 
-    alert("prueba perros")
+    alert("Cambiando diponibilidad de la habitación")
     const postId = 4;
     const data = {
         id: 4,
@@ -162,9 +170,8 @@ reserva.addEventListener('click', (e) => {
         .then(data => {
             console.log(data)
         })
-
-
-
+    
+        
 })
 
 
@@ -228,12 +235,71 @@ function Pintar() {
 
 }
 
-/*
+BotonEliminar.addEventListener('click', ()=> {
+    alert("¿Desea Eliminar la Reserva?")
 
-button.addEventListener('click',function(){
-    console.log(modal.classList);
-    modal.classList.add('show');
-    console.log(modal.classList)
+    const posiId = 4;
+    fetch(`http://localhost:3000/reservas/${posiId}`,
+    {
+        method: 'DELETE'
+    })
+    .then(Response => {
+        if(Response.ok) {
+            console.log("el recurso ha sido eliminado .");
+
+        } else {
+            console.log("no se puedo elimnar el recurso");
+        }
+    })
+    .catch(error => {
+        console.error(error)
+    })
+
+
+
+    alert("Cambiando diponibilidad de la habitación")
+    const postId = 4;
+    const data = {
+        id: 4,
+        nombre: "Suite de Lujo",
+        tipo: "Doble",
+        camas: 2,
+        img: "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+        precio: 199,
+        estado: "disponible",
+        boton: "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-4.html'",
+        disponibilidad: [
+          {
+            fecha: "2025-01-20",
+            disponible: true
+          },
+          {
+            fecha: "2025-01-21",
+            disponible: false
+          }
+        ],
+        "servicios": [
+          "Internet",
+          "Minibar",
+          "Jacuzzi",
+          "Vista panorámica"
+        ],
+        descripcion: "Suite de lujo con dos camas dobles y vista al mar."
+      
+    };
+
+    fetch(`http://localhost:3000/habitaciones/${postId}`,
+        {
+            method: "PUT",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
+    
+
 })
-
-*/

@@ -505,3 +505,76 @@ NuevoDivs.innerHTML = `
     </script>
 </body>
 </html>
+
+
+
+
+document.getElementById('formulario').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que el formulario se envíe y recargue la página.
+
+    // Obtener las fechas de check-in, check-out y el número de personas
+    const fechaInicio = document.getElementById('fechaInicio').value;
+    const fechaFin = document.getElementById('fechaFin').value;
+    const numPersonas = parseInt(document.getElementById('numPersonas').value);
+
+    // Validación básica de fechas (check-out no puede ser antes que el check-in)
+    if (new Date(fechaInicio) > new Date(fechaFin)) {
+        alert("La fecha de check-out debe ser posterior a la fecha de check-in.");
+        return;
+    }
+
+    // Solicitar todas las habitaciones
+    fetch('http://localhost:3000/habitaciones')
+        .then(response => response.json())
+        .then(habitaciones => {
+            // Filtrar las habitaciones según las fechas y el número de personas
+            const habitacionesDisponibles = habitaciones.filter(habitacion => {
+                // Filtrar habitaciones que tengan disponibilidad en el rango de fechas
+                const fechasDisponibles = habitacion.disponibilidad.filter(fecha => {
+                    return fecha.disponible &&
+                        new Date(fecha.fecha) >= new Date(fechaInicio) && 
+                        new Date(fecha.fecha) <= new Date(fechaFin);
+                });
+
+                // Verificar si la habitación tiene suficiente capacidad
+                const tieneCapacidad = habitacion.personas >= numPersonas;
+
+                // La habitación debe tener al menos una fecha disponible y suficiente capacidad
+                return fechasDisponibles.length > 0 && tieneCapacidad;
+            });
+
+            // Mostrar las habitaciones disponibles
+            mostrarResultados(habitacionesDisponibles);
+        })
+        .catch(error => {
+            console.error("Error al obtener las habitaciones:", error);
+        });
+});
+
+// Función para mostrar los resultados de las habitaciones disponibles
+function mostrarResultados(habitaciones) {
+    const contenidoJs = document.getElementById('contenidojs');
+    contenidoJs.innerHTML = ""; // Limpiar cualquier contenido previo
+
+    if (habitaciones.length === 0) {
+        contenidoJs.innerHTML = "<p>No hay habitaciones disponibles para esas fechas y número de personas.</p>";
+        return;
+    }
+
+    habitaciones.forEach(habitacion => {
+        const div = document.createElement('div');
+        div.classList.add('habitacion');
+        div.innerHTML = `
+            <div class="border p-4 mb-4">
+                <img src="${habitacion.img}" alt="${habitacion.nombre}" class="w-full h-48 object-cover mb-4">
+                <h3 class="text-xl font-bold">${habitacion.nombre}</h3>
+                <p>Precio: $${habitacion.precio}</p>
+                <p>Capacidad: ${habitacion.personas} personas</p>
+                <p>Descripción: ${habitacion.descripcion}</p>
+                <p>Servicios: ${habitacion.servicios.join(", ")}</p>
+                <button class="bg-blue-500 hover:bg-blue-400 text-white py-2 px-4 rounded mt-4" onclick="window.location.href='${habitacion.boton}'">Reservar</button>
+            </div>
+        `;
+        contenidoJs.appendChild(div);
+    });
+}

@@ -7,6 +7,7 @@
       "camas": 1,
       "img": "/Proyecto-Javascript/img/habitacion-standar.jpeg",
       "precio": 100,
+      "personas": 2,
       "boton": "window.location.href='/Proyecto-Javascript/reservasDos.html';",
       "fetch": "http://localhost:3000/habitaciones/1",
       "disponibilidad": [
@@ -33,6 +34,7 @@
       "camas": 2,
       "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
       "precio": 250,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-2.html'",
       "disponibilidad": [
@@ -60,6 +62,7 @@
       "camas": 4,
       "img": "/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
       "precio": 750,
+      "personas": 8,
       "estado": "ocupada",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-3.html'",
       "disponibilidad": [
@@ -114,6 +117,7 @@
       "camas": 1,
       "img": "/Proyecto-Javascript/img/habitacion-standar.jpeg",
       "precio": 129,
+      "personas": 2,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-5.html'",
       "disponibilidad": [
@@ -140,6 +144,7 @@
       "camas": 1,
       "img": "/Proyecto-Javascript/img/habitacion-standar.jpeg",
       "precio": 139,
+      "personas": 2,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-6.html'",
       "disponibilidad": [
@@ -166,6 +171,7 @@
       "camas": 4,
       "img": "/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
       "precio": 990,
+      "personas": 8,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-7.html'",
       "disponibilidad": [
@@ -193,6 +199,7 @@
       "camas": 4,
       "img": "/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
       "precio": 1990,
+      "personas": 8,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-8.html'",
       "disponibilidad": [
@@ -220,6 +227,7 @@
       "camas": 2,
       "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
       "precio": 299,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-9.html'",
       "disponibilidad": [
@@ -247,6 +255,7 @@
       "camas": 2,
       "img": "https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
       "precio": 349,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-10.html'",
       "disponibilidad": [
@@ -274,6 +283,7 @@
       "camas": 2,
       "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
       "precio": 449,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-11.html'",
       "disponibilidad": [
@@ -301,6 +311,7 @@
       "camas": 1,
       "img": "/Proyecto-Javascript/img/habitacionSencilla.jpeg",
       "precio": 199,
+      "personas": 2,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-12.html'",
       "disponibilidad": [
@@ -327,6 +338,7 @@
       "camas": 1,
       "img": "/Proyecto-Javascript/img/habitacion-standar.jpeg",
       "precio": 119,
+      "personas": 2,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-13.html'",
       "disponibilidad": [
@@ -353,6 +365,7 @@
       "camas": 1,
       "img": "https://r.profitroom.pl/sarahotelspa/images/rooms/thumbs/1920x1080/202205232054450.1.jpg?updated=2024-10-15_05-43",
       "precio": 299,
+      "personas": 2,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-14.html'",
       "disponibilidad": [
@@ -379,6 +392,7 @@
       "camas": 2,
       "img": "https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
       "precio": 699,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-15.html'",
       "disponibilidad": [
@@ -406,6 +420,7 @@
       "camas": 2,
       "img": "https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
       "precio": 799,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-16.html'",
       "disponibilidad": [
@@ -433,6 +448,7 @@
       "camas": 2,
       "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
       "precio": 99,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-17.html'",
       "disponibilidad": [
@@ -460,6 +476,7 @@
       "camas": 1,
       "img": "/Proyecto-Javascript/img/habitacionSencilla.jpeg",
       "precio": 899,
+      "personas": 2,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-18.html'",
       "disponibilidad": [
@@ -486,6 +503,7 @@
       "camas": 1,
       "img": "/Proyecto-Javascript/img/habitacionSencilla.jpeg",
       "precio": 89,
+      "personas": 2,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-19.html'",
       "disponibilidad": [
@@ -512,6 +530,7 @@
       "camas": 1,
       "img": "/Proyecto-Javascript/img/habitacionSencilla.jpeg",
       "precio": 100,
+      "personas": 2,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-20.html'",
       "disponibilidad": [
@@ -538,6 +557,7 @@
       "camas": 1,
       "img": "/Proyecto-Javascript/img/Habitaciones.jpeg",
       "precio": 699,
+      "personas": 2,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-21.html'",
       "disponibilidad": [
@@ -564,6 +584,7 @@
       "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
       "camas": 2,
       "precio": 949,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-22.html'",
       "disponibilidad": [
@@ -591,6 +612,7 @@
       "camas": 2,
       "img": "https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
       "precio": 249,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-23.html'",
       "disponibilidad": [
@@ -618,6 +640,7 @@
       "camas": 2,
       "img": "https://v5.hotelmalibu.com.mx/uploads/habitaciones/JUNIOR%20DOBLE%20(2).webp",
       "precio": 349,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-24.html'",
       "disponibilidad": [
@@ -645,6 +668,7 @@
       "camas": 2,
       "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
       "precio": 349,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-25.html'",
       "disponibilidad": [
@@ -672,6 +696,7 @@
       "camas": 2,
       "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
       "precio": 349,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-26.html'",
       "disponibilidad": [
@@ -699,6 +724,7 @@
       "camas": 2,
       "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
       "precio": 249,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-27.html'",
       "disponibilidad": [
@@ -726,6 +752,7 @@
       "camas": 2,
       "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
       "precio": 649,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-28.html'",
       "disponibilidad": [
@@ -753,6 +780,7 @@
       "camas": 2,
       "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
       "precio": 849,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-29.html'",
       "disponibilidad": [
@@ -780,6 +808,7 @@
       "camas": 2,
       "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
       "precio": 549,
+      "personas": 4,
       "estado": "disponible",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-30.html'",
       "disponibilidad": [
@@ -836,6 +865,19 @@
       "cantidad_personas": 1,
       "total": 200,
       "estado": "confirmada"
+    },
+    {
+      "id": 2,
+      "nombre": "Oscar",
+      "email": "aaronjones@gmail.com",
+      "password": "contraseña456",
+      "telefono": "+0987654321",
+      "fechas": [
+        {
+          "fecha_inicio": "2025-1-20",
+          "fecha_final": "2025-1-22"
+        }
+      ]
     }
   ],
   "contacto": {
