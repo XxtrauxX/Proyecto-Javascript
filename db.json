@@ -95,11 +95,16 @@
       "disponibilidad": [
         {
           "fecha": "2025-01-20",
+          
           "disponible": true
         },
         {
           "fecha": "2025-01-21",
           "disponible": false
+        },
+        {
+          "fecha":"2025-02-20",
+          "disponible":true
         }
       ],
       "servicios": [
@@ -139,14 +144,13 @@
     },
     {
       "id": 6,
-      "nombre": "Habitación Estándar",
-      "tipo": "Individual",
-      "camas": 1,
-      "img": "/Proyecto-Javascript/img/habitacion-standar.jpeg",
-      "precio": 139,
-      "personas": 2,
+      "nombre": "Suite de Lujo",
+      "tipo": "Doble",
+      "camas": 2,
+      "img": "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+      "precio": 199,
       "estado": "disponible",
-      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-6.html'",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-4.html'",
       "disponibilidad": [
         {
           "fecha": "2025-01-20",
@@ -154,15 +158,16 @@
         },
         {
           "fecha": "2025-01-21",
-          "disponible": true
+          "disponible": false
         }
       ],
       "servicios": [
         "Internet",
         "Minibar",
-        "Jacuzzi"
+        "Jacuzzi",
+        "Vista panorámica"
       ],
-      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
     },
     {
       "id": 7,
@@ -173,6 +178,7 @@
       "precio": 990,
       "personas": 8,
       "estado": "disponible",
+      "mensaje": "La hora de check in a las habitaciones será a las 14:00 del día. Si el usuario no hace efectiva la reserva dos horas después de que inicie el check-in 16:00 la habitación quedará disponible para que otra persona la pueda tomar",
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-7.html'",
       "disponibilidad": [
         {
@@ -201,7 +207,7 @@
       "precio": 1990,
       "personas": 8,
       "estado": "disponible",
-      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-8.html'",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-7.html'",
       "disponibilidad": [
         {
           "fecha": "2025-01-20",
@@ -232,11 +238,11 @@
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-9.html'",
       "disponibilidad": [
         {
-          "fecha": "2025-01-20",
+          "fecha": "2025-02-20",
           "disponible": true
         },
         {
-          "fecha": "2025-01-21",
+          "fecha": "2025-02-22",
           "disponible": true
         }
       ],
@@ -260,11 +266,11 @@
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-10.html'",
       "disponibilidad": [
         {
-          "fecha": "2025-01-20",
+          "fecha": "2025-03-15",
           "disponible": true
         },
         {
-          "fecha": "2025-01-21",
+          "fecha": "2025-03-18",
           "disponible": true
         }
       ],
@@ -288,11 +294,11 @@
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-11.html'",
       "disponibilidad": [
         {
-          "fecha": "2025-01-20",
+          "fecha": "2025-03-9",
           "disponible": true
         },
         {
-          "fecha": "2025-01-21",
+          "fecha": "2025-03-11",
           "disponible": true
         }
       ],
@@ -316,11 +322,11 @@
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-12.html'",
       "disponibilidad": [
         {
-          "fecha": "2025-01-20",
+          "fecha": "2025-04-14",
           "disponible": true
         },
         {
-          "fecha": "2025-01-21",
+          "fecha": "2025-04-16",
           "disponible": true
         }
       ],
@@ -343,11 +349,11 @@
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-13.html'",
       "disponibilidad": [
         {
-          "fecha": "2025-01-20",
+          "fecha": "2025-05-12",
           "disponible": true
         },
         {
-          "fecha": "2025-01-21",
+          "fecha": "2025-05-13",
           "disponible": true
         }
       ],
@@ -370,11 +376,11 @@
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-14.html'",
       "disponibilidad": [
         {
-          "fecha": "2025-01-20",
+          "fecha": "2025-08-10",
           "disponible": true
         },
         {
-          "fecha": "2025-01-21",
+          "fecha": "2025-08-21",
           "disponible": true
         }
       ],
@@ -397,11 +403,11 @@
       "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-15.html'",
       "disponibilidad": [
         {
-          "fecha": "2025-01-20",
+          "fecha": "2025-03-18",
           "disponible": true
         },
         {
-          "fecha": "2025-01-21",
+          "fecha": "2025-03-21",
           "disponible": true
         }
       ],
@@ -868,6 +874,32 @@
     },
     {
       "id": 2,
+      "nombre": "Oscar",
+      "email": "aaronjones@gmail.com",
+      "password": "contraseña456",
+      "telefono": "+0987654321",
+      "fechas": [
+        {
+          "fecha_inicio": "2025-1-20",
+          "fecha_final": "2025-1-22"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Oscar",
+      "email": "aaronjones@gmail.com",
+      "password": "contraseña456",
+      "telefono": "+0987654321",
+      "fechas": [
+        {
+          "fecha_inicio": "2025-1-20",
+          "fecha_final": "2025-1-22"
+        }
+      ]
+    },
+    {
+      "id": 7,
       "nombre": "Oscar",
       "email": "aaronjones@gmail.com",
       "password": "contraseña456",

@@ -8,7 +8,7 @@ const botonConfirmar = document.querySelector('#confirmar');
 const Inputnombre = document.querySelector('#nombreform')
 const BotonEliminar = document.querySelector('#eliminar')
 const datosContenedor = document.querySelector('#datos')
-const idHtml = 6;
+const idHtml = 7;
 
 
 /*
@@ -87,11 +87,11 @@ reserva.addEventListener('click', (e) => {
 
 
     const datos = {
-        id: 6,
+        id: 7,
         nombre: user.name,
         email: user.email,
-        password: "tcontraseña45t6",
-        telefono: "+0987654r321",
+        password: "contraseña4566",
+        telefono: "+09875624321",
         fechas: [
             {
                 fecha_inicio:"2025-1-20",
@@ -128,16 +128,18 @@ reserva.addEventListener('click', (e) => {
 
 
     alert("Cambiando diponibilidad de la habitación")
-    const postId = 6;
+    const postId = 7;
     const data = {
-        id: 6,
-        nombre: "Suite de Lujo",
-        tipo: "Doble",
-        camas: 2,
-        img: "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        precio: 199,
+        id: 7,
+        nombre: "La Gran Suite",
+        tipo: "Cuadruple",
+        camas: 4,
+        img: "/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
+        precio: 990,
+        personas: 8,
         estado: "ocupada",
-        boton: "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-4.html'",
+        mensaje:"La hora de check in a las habitaciones será a las 14:00 del día. Si el usuario no hace efectiva la reserva dos horas después de que inicie el check-in 16:00 la habitación quedará disponible para que otra persona la pueda tomar",
+        boton: "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-7.html'",
         disponibilidad: [
           {
             fecha: "2025-01-20",
@@ -145,7 +147,7 @@ reserva.addEventListener('click', (e) => {
           },
           {
             fecha: "2025-01-21",
-            disponible: false
+            disponible: true
           }
         ],
         "servicios": [
@@ -154,8 +156,7 @@ reserva.addEventListener('click', (e) => {
           "Jacuzzi",
           "Vista panorámica"
         ],
-        descripcion: "Suite de lujo con dos camas dobles y vista al mar."
-      
+        descripcion: "Suite de lujo  Con más confort, con cuatro camas dobles y vista al mar."
     };
 
     fetch(`http://localhost:3000/habitaciones/${postId}`,
@@ -181,7 +182,7 @@ Pintar()
 function Pintar() {
 
 
-    fetch("http://localhost:3000/habitaciones/6")
+    fetch("http://localhost:3000/habitaciones/7")
         .then(res => res.json())
         .then((datos) => {
 
@@ -221,8 +222,15 @@ function Pintar() {
                 <span class="inline-flex items-center px-4 py-2 rounded-full bg-blue-200 text-sm font-medium text-gray-800">
                     
                     <p> Estado: ${datos.estado}</p>
+                   
                 </span>
+
+               
+
+                
             </div>
+
+            <p>IMPORTANTE: ${datos.mensaje}</p>
     
             
             
@@ -238,7 +246,7 @@ function Pintar() {
 BotonEliminar.addEventListener('click', ()=> {
     alert("¿Desea Eliminar la Reserva?")
 
-    const posiId = 6;
+    const posiId = 7;
     fetch(`http://localhost:3000/reservas/${posiId}`,
     {
         method: 'DELETE'
@@ -258,16 +266,18 @@ BotonEliminar.addEventListener('click', ()=> {
 
 
     alert("Cambiando diponibilidad de la habitación")
-    const postId = 6;
+    const postId = 7;
     const data = {
-        id: 6,
-        nombre: "Suite de Lujo",
-        tipo: "Doble",
-        camas: 2,
-        img: "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
-        precio: 199,
+        id: 7,
+        nombre: "La Gran Suite",
+        tipo: "Cuadruple",
+        camas: 4,
+        img: "/Proyecto-Javascript/img/habitacion-cuadruple.jpeg",
+        precio: 990,
+        personas: 8,
         estado: "disponible",
-        boton: "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-4.html'",
+        mensaje:"La hora de check in a las habitaciones será a las 14:00 del día. Si el usuario no hace efectiva la reserva dos horas después de que inicie el check-in 16:00 la habitación quedará disponible para que otra persona la pueda tomar",
+        boton: "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-7.html'",
         disponibilidad: [
           {
             fecha: "2025-01-20",
@@ -275,7 +285,7 @@ BotonEliminar.addEventListener('click', ()=> {
           },
           {
             fecha: "2025-01-21",
-            disponible: false
+            disponible: true
           }
         ],
         "servicios": [
@@ -284,7 +294,7 @@ BotonEliminar.addEventListener('click', ()=> {
           "Jacuzzi",
           "Vista panorámica"
         ],
-        descripcion: "Suite de lujo con dos camas dobles y vista al mar."
+        descripcion: "Suite de lujo  Con más confort, con cuatro camas dobles y vista al mar."
       
     };
 

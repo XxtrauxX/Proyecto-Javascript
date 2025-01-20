@@ -13,7 +13,93 @@ const FechaFin = document.querySelector('#fechaFin')
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const formulario = document.getElementById('formulario');
+  const contenidoJs = document.getElementById('contenidojs');
 
+  formulario.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const fechaInicio = document.getElementById('fechaInicio').value;
+    const fechaFin = document.getElementById('fechaFin').value;
+    const numPersonas = parseInt(document.getElementById('numPersonas').value);
+
+    try {
+      const habitaciones = await obtenerHabitaciones();
+      const habitacionesDisponibles = filtrarHabitaciones(habitaciones, fechaInicio, fechaFin, numPersonas);
+      mostrarHabitaciones(habitacionesDisponibles);
+    } catch (error) {
+      console.error('Error al obtener las habitaciones:', error);
+      contenidoJs.innerHTML = '<p>Error al obtener las habitaciones. Por favor, intente nuevamente.</p>';
+    }
+  });
+
+  async function obtenerHabitaciones() {
+    const response = await fetch('http://localhost:3000/habitaciones');
+    if (!response.ok) {
+      throw new Error('No se pudo obtener las habitaciones');
+    }
+    return await response.json();
+  }
+
+  function filtrarHabitaciones(habitaciones, fechaInicio, fechaFin, numPersonas) {
+    return habitaciones.filter(habitacion => {
+      if (habitacion.personas < numPersonas) return false;
+
+      const inicio = new Date(fechaInicio);
+      const fin = new Date(fechaFin);
+      for (let fecha = new Date(inicio); fecha <= fin; fecha.setDate(fecha.getDate() + 1)) {
+        const fechaString = fecha.toISOString().split('T')[0];
+        const disponibilidadFecha = habitacion.disponibilidad.find(d => d.fecha === fechaString);
+        if (!disponibilidadFecha || !disponibilidadFecha.disponible) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }
+
+  function mostrarHabitaciones(habitaciones) {
+    if (habitaciones.length === 0) {
+      contenidoJs.innerHTML = '<p class="text-center text-xl font-bold mt-8">No hay habitaciones disponibles para las fechas y número de personas seleccionados.</p>';
+      return;
+    }
+
+    let html = '<h2 class="text-3xl font-bold text-center mb-8">Habitaciones Disponibles:</h2>';
+    habitaciones.forEach(habitacion => {
+      html += `
+        <div class="grid md:grid-cols-2 mx-32 border-y-2 border-gray-300 gap-6 mb-8">
+          <div class="relative h-64 md:h-full">
+            <img 
+              src="${habitacion.img}"
+              class="absolute inset-0 w-full h-full object-cover"
+              alt="${habitacion.nombre}"
+            />
+          </div>
+          <div class="p-6 md:p-8 flex flex-col justify-center">
+            <h2 class="text-3xl font-bold mb-4">${habitacion.nombre}</h2>
+            <h3 class="text-xl font-bold mb-2">Precio: $ ${habitacion.precio}</h3>
+            <h3 class="text-xl font-bold mb-2">Max-Personas: ${habitacion.personas}</h3>
+            <p class="text-gray-600 mb-6">
+              ${habitacion.descripcion}
+            </p>
+            <p class="text-gray-600 mb-4">Servicios: ${habitacion.servicios.join(', ')}</p>
+            <button onclick="${habitacion.boton}" class="inline-flex justify-center items-center px-6 py-3 rounded-lg bg-blue-900 text-white font-medium hover:bg-blue-800 transition-colors w-full sm:w-auto text-center">
+              VER DETALLES
+            </button>
+          </div>
+        </div>
+      `;
+    });
+
+    contenidoJs.innerHTML = html;
+  }
+});
+
+
+
+/*
 
 PrinBoton.addEventListener('click', (e) => {
 
@@ -52,6 +138,7 @@ PrinBoton.addEventListener('click', (e) => {
               <div class="p-6 md:p-8 flex flex-col justify-center">
                 <h2 class="text-3xl font-bold mb-4">${elementos.nombre}</h2>
                 <h3 class"text-3xl font-bold mb-4">Precio: $ ${elementos.precio}</3>
+                <h3 class"text-3xl font-bold mb-4">Max-Personas: ${elementos.personas}</3>
                 <p class="text-gray-600 mb-6">
                   ${elementos.descripcion}
                 </p>
@@ -87,6 +174,8 @@ PrinBoton.addEventListener('click', (e) => {
 
                //contendor.append(nuevodiv)
 
+
+               /*
                const BotonRedirec = document.querySelector('#redi')
 
       });
@@ -109,4 +198,4 @@ BotonRedirec.addEventListener('click', (e) => {
 })
 
 
-
+*/

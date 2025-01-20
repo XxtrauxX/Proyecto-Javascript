@@ -1,6 +1,178 @@
 const contendor = document.querySelector('#contenedor')
 const boton = document.querySelector('#prueba')
+const reserva = document.querySelector('#reserva')
+const button = document.querySelector('#button')
+const modal = document.querySelector('.modal')
+const CerrarMenu = document.querySelector('.modal_close');
+const botonConfirmar = document.querySelector('#confirmar');
+const Inputnombre = document.querySelector('#nombreform')
+const BotonEliminar = document.querySelector('#eliminar')
+const datosContenedor = document.querySelector('#datos')
+const idHtml = 5;
 
+
+/*
+
+BotonEliminar.addEventListener('click', () => {
+
+    alert("prueba perros")
+    const postId = 4;
+    const data = {
+        id: 4,
+        nombre: "Suite de Lujo",
+        tipo: "Doble",
+        camas: 2,
+        img: "/Proyecto-Javascript/img/HabitacionDoble.jpeg",
+        precio: 199,
+        estado: "ocupada",
+        boton: "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-4.html'",
+        disponibilidad: [
+          {
+            fecha: "2025-01-20",
+            disponible: true
+          },
+          {
+            fecha: "2025-01-21",
+            disponible: false
+          }
+        ],
+        "servicios": [
+          "Internet",
+          "Minibar",
+          "Jacuzzi",
+          "Vista panorámica"
+        ],
+        descripcion: "Suite de lujo con dos camas dobles y vista al mar."
+      
+    };
+
+    fetch(`http://localhost:3000/habitaciones/${postId}`,
+        {
+            method: "PUT",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
+
+})
+
+*/
+
+CerrarMenu.addEventListener('click', function () {
+    modal.classList.remove('show');
+
+})
+
+reserva.addEventListener('click', (e) => {
+    e.preventDefault()
+    const user = JSON.parse(localStorage.getItem('login_success')) || false
+    if (!user) {
+        window.location.href = '/Proyecto-Javascript/login.html'
+    }
+    /*
+      alert("Ya estas registrado")
+      modal.classList.add('show');
+  
+      const NombreTitular = Inputnombre.value
+      console.log(NombreTitular)
+  
+      */
+
+    console.log(user.email)
+
+
+    const datos = {
+        id: 5,
+        nombre: user.name,
+        email: user.email,
+        password: "contraseña456",
+        telefono: "+0987654321",
+        fechas: [
+            {
+                fecha_inicio:"2025-1-20",
+                fecha_final:"2025-1-22"
+            }
+        ]
+    };
+
+    fetch("http://localhost:3000/reservas", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(datos),
+    })
+        .then((res) => {
+
+            if (!res.ok) {
+
+                throw new Error(`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then((datos) => {
+            console.log("Respuesta de la API:", datos);
+        })
+        .catch((error) => {
+
+            console.error('Error:', error);
+        });
+
+
+    alert("Reserva Exitosa")
+
+
+    alert("Cambiando diponibilidad de la habitación")
+    const postId = 5;
+    const data = {
+        id: 5,
+      nombre:"Habitación Estándar",
+      tipo: "Individual",
+      camas: 1,
+      img:"/Proyecto-Javascript/img/habitacion-standar.jpeg",
+      precio: 129,
+      personas: 2,
+      estado:"ocupado",
+      boton:"window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-5.html'",
+      disponibilidad: [
+        {
+          fecha: "2025-01-20",
+          disponible: true
+        },
+        {
+          fecha: "2025-01-21",
+          disponible: true
+        }
+      ],
+      servicios: [
+        Internet,
+        Minibar,
+        Jacuzzi
+      ],
+      "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      
+    };
+
+    fetch(`http://localhost:3000/habitaciones/${postId}`,
+        {
+            method: "PUT",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
+    
+        
+})
 
 
 Pintar()
@@ -9,7 +181,7 @@ Pintar()
 function Pintar() {
 
 
-    fetch("http://localhost:3000/habitaciones/4")
+    fetch("http://localhost:3000/habitaciones/5")
         .then(res => res.json())
         .then((datos) => {
 
@@ -28,7 +200,7 @@ function Pintar() {
             >
         </div>
     
-        <!-- Contenido -->
+       
         <div class="w-full md:w-1/2 p-6 space-y-6">
             <header>
                 <h1 class="text-3xl font-bold text-gray-900 mb-4">${datos.nombre}</h1>
@@ -46,21 +218,14 @@ function Pintar() {
                     ${datos.disponibilidad[0].fecha} , 
                     ${datos.disponibilidad[1].fecha}
                 </span>
-                <span class="inline-flex items-center px-4 py-2 rounded-full bg-gray-100 text-sm font-medium text-gray-800">
+                <span class="inline-flex items-center px-4 py-2 rounded-full bg-blue-200 text-sm font-medium text-gray-800">
                     
                     <p> Estado: ${datos.estado}</p>
                 </span>
             </div>
     
-            <!-- Botón CTA -->
-            <div class="pt-4">
-                <a 
-                    href="#" 
-                    class="inline-block px-6 py-3 bg-[#00264C] text-white font-medium rounded hover:bg-[#003366] transition-colors duration-200"
-                >
-                    RESERVAR
-                </a>
-            </div>
+            
+            
         </div>
     </article>
     </main>`;
@@ -69,3 +234,72 @@ function Pintar() {
         })
 
 }
+
+BotonEliminar.addEventListener('click', ()=> {
+    alert("¿Desea Eliminar la Reserva?")
+
+    const posiId = 5;
+    fetch(`http://localhost:3000/reservas/${posiId}`,
+    {
+        method: 'DELETE'
+    })
+    .then(Response => {
+        if(Response.ok) {
+            console.log("el recurso ha sido eliminado .");
+
+        } else {
+            console.log("no se puedo elimnar el recurso");
+        }
+    })
+    .catch(error => {
+        console.error(error)
+    })
+
+
+
+    alert("Cambiando diponibilidad de la habitación")
+    const postId = 5;
+    const data = {
+        id: 5,
+        nombre: "Habitación Estándar",
+        tipo: "Individual",
+        camas: 1,
+        img: "/Proyecto-Javascript/img/habitacion-standar.jpeg",
+        precio: 129,
+        personas: 2,
+        estado: "disponible",
+        boton: "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-5.html'",
+        disponibilidad: [
+          {
+            fecha: "2025-01-20",
+            disponible: true
+          },
+          {
+            fecha: "2025-01-21",
+            disponible: true
+          }
+        ],
+        servicios: [
+          Internet,
+          Minibar,
+          Jacuzzi
+        ],
+        "descripcion": "Habitación acogedora con una cama individual y servicios básicos."
+      
+    };
+
+    fetch(`http://localhost:3000/habitaciones/${postId}`,
+        {
+            method: "PUT",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
+    
+
+})
