@@ -10,30 +10,29 @@ const FechaFin = document.querySelector('#fechaFin')
 
 
 
-/*
 
-// Espera a que el DOM esté completamente cargado antes de ejecutar el script
+
+
 document.addEventListener('DOMContentLoaded', () => {
-  // Obtiene referencias a elementos del DOM
+ 
   const formulario = document.getElementById('formulario');
   const contenidoJs = document.getElementById('contenidojs');
 
-  // Agrega un event listener al formulario para manejar la búsqueda de habitaciones
+  
   formulario.addEventListener('submit', (e) => {
-    e.preventDefault(); // Previene el envío del formulario por defecto
+    e.preventDefault(); 
 
-    // Obtiene los valores de los campos del formulario
+    
     const fechaInicio = document.getElementById('fechaInicio').value;
     const fechaFin = document.getElementById('fechaFin').value;
     const numPersonas = parseInt(document.getElementById('numPersonas').value);
 
-    // Realiza la búsqueda de habitaciones
     buscarHabitaciones(fechaInicio, fechaFin, numPersonas);
   });
 
-  // Función principal para buscar y mostrar habitaciones disponibles
+  
   function buscarHabitaciones(fechaInicio, fechaFin, numPersonas) {
-    // Realiza una petición fetch a la API para obtener todas las habitaciones
+   
     fetch('http://localhost:3000/habitaciones')
       .then(response => {
         if (!response.ok) {
@@ -42,26 +41,26 @@ document.addEventListener('DOMContentLoaded', () => {
         return response.json();
       })
       .then(habitaciones => {
-        // Filtra las habitaciones según disponibilidad y capacidad
+        
         const habitacionesDisponibles = habitaciones.filter(habitacion => {
           return esHabitacionDisponible(habitacion, fechaInicio, fechaFin, numPersonas);
         });
 
-        // Muestra las habitaciones disponibles
+        
         mostrarHabitaciones(habitacionesDisponibles);
       })
       .catch(error => {
         console.error('Error:', error);
-        contenidoJs.innerHTML = '<p class="text-center text-xl font-bold mt-8">Error al obtener las habitaciones. Por favor, intente nuevamente.</p>';
+        contenidoJs.innerHTML = '<p class="text-center text-xl font-bold mt-8"> Error al obtener las habitaciones. Por favor, intente nuevamente :).</p>';
       });
   }
 
-  // Función para verificar si una habitación está disponible
+  
   function esHabitacionDisponible(habitacion, fechaInicio, fechaFin, numPersonas) {
-    // Verifica si la habitación tiene capacidad suficiente
+    
     if (habitacion.personas < numPersonas) return false;
 
-    // Verifica la disponibilidad para cada fecha en el rango seleccionado
+    
     const inicio = new Date(fechaInicio);
     const fin = new Date(fechaFin);
     for (let fecha = new Date(inicio); fecha <= fin; fecha.setDate(fecha.getDate() + 1)) {
@@ -75,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return true;
   }
 
-  // Función para mostrar las habitaciones disponibles en el DOM
+  
   function mostrarHabitaciones(habitaciones) {
     if (habitaciones.length === 0) {
       contenidoJs.innerHTML = '<p class="text-center text-xl font-bold mt-8">No hay habitaciones disponibles para las fechas y número de personas seleccionados.</p>';
@@ -112,10 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
     contenidoJs.innerHTML = html;
   }
 });
- */
+ 
 
 
-
+/*
 PrinBoton.addEventListener('click', (e) => {
 
   e.preventDefault()
@@ -189,6 +188,7 @@ PrinBoton.addEventListener('click', (e) => {
 
                //contendor.append(nuevodiv)
 
+               /*
 
                
                const BotonRedirec = document.querySelector('#redi')
@@ -205,6 +205,9 @@ PrinBoton.addEventListener('click', (e) => {
 
 })
 
+*/
+
+/*
 
 BotonRedirec.addEventListener('click', (e) => {
         e.preventDefault()
@@ -212,4 +215,5 @@ BotonRedirec.addEventListener('click', (e) => {
  
 })
 
+*/
 
