@@ -95,7 +95,6 @@
       "disponibilidad": [
         {
           "fecha": "2025-01-20",
-          
           "disponible": true
         },
         {
@@ -103,8 +102,8 @@
           "disponible": false
         },
         {
-          "fecha":"2025-02-20",
-          "disponible":true
+          "fecha": "2025-02-20",
+          "disponible": true
         }
       ],
       "servicios": [
@@ -235,14 +234,14 @@
       "precio": 299,
       "personas": 4,
       "estado": "disponible",
-      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-9.html'",
+      "boton": "window.location.href='/Proyecto-Javascript/modulo-de-html/habitacion-7.html'",
       "disponibilidad": [
         {
-          "fecha": "2025-02-20",
+          "fecha": "2025-01-20",
           "disponible": true
         },
         {
-          "fecha": "2025-02-22",
+          "fecha": "2025-01-21",
           "disponible": true
         }
       ],
@@ -252,7 +251,7 @@
         "Jacuzzi",
         "Vista panorámica"
       ],
-      "descripcion": "Suite de lujo con dos camas dobles y vista al mar."
+      "descripcion": "Suite de lujo  Con más confort, con dos camas dobles y vista al mar."
     },
     {
       "id": 10,
@@ -887,19 +886,6 @@
     },
     {
       "id": 5,
-      "nombre": "Oscar",
-      "email": "aaronjones@gmail.com",
-      "password": "contraseña456",
-      "telefono": "+0987654321",
-      "fechas": [
-        {
-          "fecha_inicio": "2025-1-20",
-          "fecha_final": "2025-1-22"
-        }
-      ]
-    },
-    {
-      "id": 7,
       "nombre": "Oscar",
       "email": "aaronjones@gmail.com",
       "password": "contraseña456",

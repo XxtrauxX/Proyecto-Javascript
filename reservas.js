@@ -10,56 +10,72 @@ const FechaFin = document.querySelector('#fechaFin')
 
 
 
+/*
 
-
-
+// Espera a que el DOM esté completamente cargado antes de ejecutar el script
 document.addEventListener('DOMContentLoaded', () => {
+  // Obtiene referencias a elementos del DOM
   const formulario = document.getElementById('formulario');
   const contenidoJs = document.getElementById('contenidojs');
 
-  formulario.addEventListener('submit', async (e) => {
-    e.preventDefault();
+  // Agrega un event listener al formulario para manejar la búsqueda de habitaciones
+  formulario.addEventListener('submit', (e) => {
+    e.preventDefault(); // Previene el envío del formulario por defecto
 
+    // Obtiene los valores de los campos del formulario
     const fechaInicio = document.getElementById('fechaInicio').value;
     const fechaFin = document.getElementById('fechaFin').value;
     const numPersonas = parseInt(document.getElementById('numPersonas').value);
 
-    try {
-      const habitaciones = await obtenerHabitaciones();
-      const habitacionesDisponibles = filtrarHabitaciones(habitaciones, fechaInicio, fechaFin, numPersonas);
-      mostrarHabitaciones(habitacionesDisponibles);
-    } catch (error) {
-      console.error('Error al obtener las habitaciones:', error);
-      contenidoJs.innerHTML = '<p>Error al obtener las habitaciones. Por favor, intente nuevamente.</p>';
-    }
+    // Realiza la búsqueda de habitaciones
+    buscarHabitaciones(fechaInicio, fechaFin, numPersonas);
   });
 
-  async function obtenerHabitaciones() {
-    const response = await fetch('http://localhost:3000/habitaciones');
-    if (!response.ok) {
-      throw new Error('No se pudo obtener las habitaciones');
-    }
-    return await response.json();
-  }
-
-  function filtrarHabitaciones(habitaciones, fechaInicio, fechaFin, numPersonas) {
-    return habitaciones.filter(habitacion => {
-      if (habitacion.personas < numPersonas) return false;
-
-      const inicio = new Date(fechaInicio);
-      const fin = new Date(fechaFin);
-      for (let fecha = new Date(inicio); fecha <= fin; fecha.setDate(fecha.getDate() + 1)) {
-        const fechaString = fecha.toISOString().split('T')[0];
-        const disponibilidadFecha = habitacion.disponibilidad.find(d => d.fecha === fechaString);
-        if (!disponibilidadFecha || !disponibilidadFecha.disponible) {
-          return false;
+  // Función principal para buscar y mostrar habitaciones disponibles
+  function buscarHabitaciones(fechaInicio, fechaFin, numPersonas) {
+    // Realiza una petición fetch a la API para obtener todas las habitaciones
+    fetch('http://localhost:3000/habitaciones')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('No se pudo obtener las habitaciones');
         }
-      }
+        return response.json();
+      })
+      .then(habitaciones => {
+        // Filtra las habitaciones según disponibilidad y capacidad
+        const habitacionesDisponibles = habitaciones.filter(habitacion => {
+          return esHabitacionDisponible(habitacion, fechaInicio, fechaFin, numPersonas);
+        });
 
-      return true;
-    });
+        // Muestra las habitaciones disponibles
+        mostrarHabitaciones(habitacionesDisponibles);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        contenidoJs.innerHTML = '<p class="text-center text-xl font-bold mt-8">Error al obtener las habitaciones. Por favor, intente nuevamente.</p>';
+      });
   }
 
+  // Función para verificar si una habitación está disponible
+  function esHabitacionDisponible(habitacion, fechaInicio, fechaFin, numPersonas) {
+    // Verifica si la habitación tiene capacidad suficiente
+    if (habitacion.personas < numPersonas) return false;
+
+    // Verifica la disponibilidad para cada fecha en el rango seleccionado
+    const inicio = new Date(fechaInicio);
+    const fin = new Date(fechaFin);
+    for (let fecha = new Date(inicio); fecha <= fin; fecha.setDate(fecha.getDate() + 1)) {
+      const fechaString = fecha.toISOString().split('T')[0];
+      const disponibilidadFecha = habitacion.disponibilidad.find(d => d.fecha === fechaString);
+      if (!disponibilidadFecha || !disponibilidadFecha.disponible) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  // Función para mostrar las habitaciones disponibles en el DOM
   function mostrarHabitaciones(habitaciones) {
     if (habitaciones.length === 0) {
       contenidoJs.innerHTML = '<p class="text-center text-xl font-bold mt-8">No hay habitaciones disponibles para las fechas y número de personas seleccionados.</p>';
@@ -96,10 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
     contenidoJs.innerHTML = html;
   }
 });
+ */
 
 
-
-/*
 
 PrinBoton.addEventListener('click', (e) => {
 
@@ -175,7 +190,7 @@ PrinBoton.addEventListener('click', (e) => {
                //contendor.append(nuevodiv)
 
 
-               /*
+               
                const BotonRedirec = document.querySelector('#redi')
 
       });
@@ -198,4 +213,3 @@ BotonRedirec.addEventListener('click', (e) => {
 })
 
 
-*/
